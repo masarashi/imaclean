@@ -1,0 +1,36 @@
+ul, ol, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: inherit;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Hiragino Mincho Pro',serif;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+    &:hover {
+        text-decoration: underline;
+    }
+}

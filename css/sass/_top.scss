@@ -1,0 +1,108 @@
+.hero {
+    background-color: #f5f5dc;
+    height: 400px;
+    margin-bottom: $spacing-m;
+    &__wrapper {
+        @include wrapper;
+        position: relative;
+    }
+    &__txt {
+        font-size: 2em;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+    }
+}
+
+.aboutus {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacing-m;
+    &__item {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        & + & {
+            margin-left: 20px;
+        }
+    }
+    &__icon {
+        color: darkgreen;
+    }
+    &__title {
+        order: 2;
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__txt {
+        order: 3;
+        padding: 0 10px;
+    }
+    &__img {
+        order: 1;
+        background-color: #f5f5dc;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+.service-list {
+    margin-bottom: $spacing-m;
+    &__wrapper {
+        display: flex;
+    }
+    &__item {
+        margin-bottom: 50px;
+    }
+    &__body {
+        order: 2;
+        padding: 10px 10px 10px 20px;
+        background-color: rgba(245, 245, 220, 0.3);
+    }
+    &__title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    &__txt {
+        // padding-left: 10px;
+    }
+    &__img {
+        position: relative;
+        order: 1;
+        flex-shrink: 0;
+        // background-color: #f5f5dc;
+        height: 150px;
+        width: 150px;
+        overflow: hidden;
+        &.--large {
+            height: 300px;
+            width: 300px;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__price {
+        margin-top: 30px;
+    }
+}
+
+.news-list {
+    margin-bottom: $spacing-m;
+    &__item {
+        & + & {
+            margin-top: 20px;
+        }
+    }
+    &__date {
+    }
+    &__body {
+        margin-left: 20px;
+    }
+}

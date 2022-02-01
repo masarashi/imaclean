@@ -1,0 +1,39 @@
+.l-header {
+    @include wrapper;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.gnav {
+    &__nav {
+        display: flex;
+    }
+    &__item {
+        & + & {
+            margin-left: 30px;
+        }
+    }
+}
+
+.header-company {
+    &__txt {
+        font-size: 0.8em;
+    }
+    &__name {
+        font-size: 1.8em;
+    }
+}
+
+// .header-phone {
+//     position: relative;
+//     text-align: center;
+//     &::before {
+//         content: "24時間受付";
+//         position: absolute;
+//         top: -25px;
+//         left: 0px;
+//         right: 0px;
+//     }
+// }

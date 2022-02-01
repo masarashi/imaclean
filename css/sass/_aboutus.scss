@@ -1,0 +1,101 @@
+.page-title__aboutus {
+    position: relative;
+    font-size: 4em;
+    font-weight: bold;
+    color: darkgreen;
+    letter-spacing: 10px;
+    margin-top: 1em;
+    margin-bottom: $spacing-l;
+    &::before {
+        content: "About us";
+        position: absolute;
+        font-size: 0.4em;
+        font-weight: normal;
+        top: -1.5em;
+    }
+}
+
+.greeting {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    &__body {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        flex: 1;
+        padding-right: 50px;
+        padding-left: 0;
+        height: 360px;
+    }
+    &__signature {
+        font-size: 1.5em;
+        text-align: right;
+        &--secondary {
+            font-size: 0.6em;
+        }
+    }
+    &__img {
+        position: relative;
+        width: 360px;
+        height: 360px;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: auto;
+        }
+    }
+}
+
+.overview {
+    &__table {
+        border-collapse:  collapse;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: $spacing-m;
+    }
+    &__map {
+        text-align: center;
+    }
+}
+
+th, td {
+    text-align: left;
+    letter-spacing: 1px;
+    padding: 0 30px;
+    border-top: 1px solid #dcdcdc;
+    &, &:last-child {
+        border-bottom: 1px solid #dcdcdc;
+    }
+}
+
+table {
+}
+
+th {
+    width: 100px;
+    height: 70px;
+}
+
+.company-pic {
+    display: flex;
+    justify-content: space-between;
+    &__img {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+        }
+    }
+}

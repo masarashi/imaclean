@@ -1,0 +1,63 @@
+.page-title__service {
+    position: relative;
+    font-size: 4em;
+    font-weight: bold;
+    color: darkgreen;
+    letter-spacing: 10px;
+    margin-top: 1em;
+    margin-bottom: $spacing-l;
+    &::before {
+        content: "Service";
+        position: absolute;
+        font-size: 0.4em;
+        font-weight: normal;
+        top: -1.5em;
+    }
+}
+
+.service-point {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        // margin-bottom: 20px;
+        padding: 0px 20px 20px 0px;
+        width: calc(50% - 20px);
+    }
+    &__title {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: darkgreen;
+    }
+    &__txt {
+        padding: 10px;
+    }
+}
+
+.service-flow {
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    &__num {
+        color: darkgreen;
+        font-size: 2em;
+        line-height: 50px;
+        text-align: center;
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        border: 2px solid darkgreen;
+        border-radius: 50%;
+    }
+    &__body {
+        flex: 1;
+    }
+    &__title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    &__txt {
+
+    }
+}

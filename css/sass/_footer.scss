@@ -1,0 +1,41 @@
+.l-footer {
+    background-color: green;
+    padding-top: $spacing-m;
+    padding-bottom: $spacing-m;
+    &__wrapper {
+        display: flex;
+        margin-bottom: $spacing-m;
+    }
+    &__bottom {
+        color: white;
+        font-size: 0.8em;
+        text-align: center;
+    }
+}
+
+.footer-company-info {
+    &__name {
+        font-size: 1.5em;
+        color: white;
+        margin-bottom: $spacing-s;
+    }
+    &__address {
+        color: white;
+        margin-bottom: $spacing-s;
+    }
+    &__phone {
+        color: white;
+    }
+}
+
+.footer-nav {
+    margin-left: auto;
+    &__item {
+        & + & {
+            margin-top: $spacing-s;
+        }
+        & a {
+            color: white;
+        }
+    }
+}
