@@ -34,3 +34,37 @@ a {
         text-decoration: underline;
     }
 }
+
+// variable
+
+$colors: (
+    darkgreen: #006400,
+);
+
+@function cl($key) {
+    @return map-get($colors, $key);
+}
+
+$spacing-s: 10px;
+$spacing-m: 50px;
+$spacing-l: 150px;
+
+$max-width: 1080px;
+
+
+// mixin
+
+@mixin wrapper {
+    max-width: $max-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 40px;
+}
+
+$breakpoint: 768px;
+
+@mixin sp {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}

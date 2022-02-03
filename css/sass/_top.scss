@@ -15,16 +15,21 @@
 }
 
 .aboutus {
-    display: flex;
-    justify-content: space-between;
+    @include sp {
+        display: flex;
+        justify-content: space-between;
+    }
     margin-bottom: $spacing-m;
     &__item {
+        @include sp {
+            & + & {
+                margin-left: 20px;
+            }
+        }
         display: flex;
         flex-flow: column;
         width: 100%;
-        & + & {
-            margin-left: 20px;
-        }
+        margin-bottom: $spacing-m;
     }
     &__icon {
         color: darkgreen;

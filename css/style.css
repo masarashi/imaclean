@@ -85,9 +85,6 @@ a:hover {
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -102,6 +99,14 @@ a:hover {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .contact__aside {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -111,8 +116,15 @@ a:hover {
 }
 
 .contact__phone {
+  margin-bottom: 50px;
   position: relative;
   font-size: 1.8em;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__phone {
+    margin-bottom: 0px;
+  }
 }
 
 .contact__phone::after {
@@ -124,9 +136,11 @@ a:hover {
   right: 0px;
 }
 
-.contact__line {
-  height: 100%;
-  border-left: 1px solid darkgreen;
+@media screen and (min-width: 768px) {
+  .contact__line {
+    height: 100%;
+    border-left: 1px solid darkgreen;
+  }
 }
 
 .l-header {
@@ -232,13 +246,18 @@ a:hover {
 }
 
 .aboutus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .aboutus__item {
@@ -250,10 +269,13 @@ a:hover {
       -ms-flex-flow: column;
           flex-flow: column;
   width: 100%;
+  margin-bottom: 50px;
 }
 
-.aboutus__item + .aboutus__item {
-  margin-left: 20px;
+@media screen and (min-width: 768px) {
+  .aboutus__item + .aboutus__item {
+    margin-left: 20px;
+  }
 }
 
 .aboutus__icon {
