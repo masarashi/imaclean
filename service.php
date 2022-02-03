@@ -1,46 +1,17 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/850082e926.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class="l-header">
-        <div class="header-company">
-            <div>
-                <p class="header-company__name"><a href="/">I.M.Aクリーン産業株式会社</a></p>
-            </div>
-        </div>
-        <div class="flex">
-            <div class="gnav">
-                <nav>
-                    <ul class="gnav__nav">
-                        <li class="gnav__item"><a href="aboutus.html">企業情報</a></li>
-                        <li class="gnav__item"><a href="service.html">サービス</a></li>
-                        <li class="gnav__item"><a href="news.html">お知らせ</a></li>
-                        <li class="gnav__item"><a href="contact.html">お問い合わせ</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- <div class="">
-                <div>
-                    <p class="header-phone">080-0000-0000</p>
-                </div>
-            </div> -->
-        </div>
-    </header>
+<?php
+/*
+Template Name: サービス
+*/
+?>
+
+<?php get_header(); ?>
 
     <main>
         <div class="wrapper">
             <div class="breadcrumb">
-                <a href="/index.html">TOP</a>
+                <a href="<?php echo home_url(); ?>">TOP</a>
                 <span> > </span>
-                <a href="/service.html">サービス</a>
+                <a href="<?php echo home_url( 'service' ); ?>">サービス</a>
             </div>
             <h1 class="page-title__service">サービス</h1>
         </div>
@@ -64,7 +35,7 @@
                                 </div>
                             </div>
                             <div class="service-list__img --large">
-                                <img src="image/service_image_trash.jpeg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/service_image_trash.jpeg" alt="">
                             </div>
                         </div>
                     </li>
@@ -84,7 +55,7 @@
                                 </div>
                             </div>
                             <div class="service-list__img --large">
-                                <img src="image/service_image_truck.jpeg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/service_image_truck.jpeg" alt="">
                             </div>
                         </div>
                     </li>
@@ -104,7 +75,7 @@
                                 </div>
                             </div>
                             <div class="service-list__img --large">
-                                <img src="image/service_image_home.jpeg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/service_image_home.jpeg" alt="">
                             </div>
                         </div>
                     </li>
@@ -153,7 +124,7 @@
                     </li>
                 </ul>
                 <div class="l-seciton__link">
-                    <a href="/contact.html" class="link-btn"><i class="far fa-envelope"></i> 無料相談</a>
+                    <a href="<?php echo home_url( 'contact' ); ?>" class="link-btn"><i class="far fa-envelope"></i> 無料相談</a>
                 </div>
             </div>
         </section>
@@ -200,34 +171,11 @@
                     <div class="contact__line">
                     </div>
                     <div class="contact__aside">
-                        <a href="/contact" class="link-btn"><i class="far fa-envelope"></i> お問い合わせ</a>
+                        <a href="<?php echo home_url( 'contact' ); ?>" class="link-btn"><i class="far fa-envelope"></i> お問い合わせ</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="l-footer">
-        <div class="wrapper">
-            <div class="l-footer__wrapper">
-                <div class="footer-company-info">
-                    <p class="footer-company-info__name">I.M.Aクリーン産業株式会社</p>
-                    <p class="footer-company-info__address">〒336-0026 埼玉県さいたま市南区辻 2-12-13</p>
-                    <p class="footer-company-info__phone">TEL: 048-838-7202 / FAX: 048-838-7202</p>
-                </div>
-                <div class="footer-nav">
-                    <ul>
-                        <li class="footer-nav__item"><a href="">サイトマップ</a></li>
-                        <li class="footer-nav__item"><a href="">企業情報</a></li>
-                        <li class="footer-nav__item"><a href="">サービス</a></li>
-                        <li class="footer-nav__item"><a href="">お問い合わせ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="l-footer__bottom">
-                <p>©I.M.A Clean Sangyo Co.,Ltd.</p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+<?php get_footer();
