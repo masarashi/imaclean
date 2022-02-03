@@ -63,7 +63,7 @@ $max-width: 1080px;
 
 $breakpoint: 768px;
 
-@mixin sp {
+@mixin pc {
     @media screen and (min-width: $breakpoint) {
         @content;
     }

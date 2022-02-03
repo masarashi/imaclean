@@ -48,6 +48,7 @@ a:hover {
 .section-title {
   font-size: 1.8em;
   font-weight: bold;
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -315,6 +316,19 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+@media screen and (min-width: 768px) {
+  .service-list__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
 }
 
 .service-list__item {
@@ -330,20 +344,34 @@ a:hover {
 }
 
 .service-list__title {
+  text-align: center;
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .service-list__title {
+    text-align: left;
+  }
+}
+
 .service-list__img {
-  position: relative;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  position: relative;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 100%;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .service-list__img {
+    height: 150px;
+    width: 150px;
+  }
 }
 
 .service-list__img.--large {
