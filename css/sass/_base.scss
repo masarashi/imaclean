@@ -1,3 +1,7 @@
+html {
+    font-size: 62.5%;
+}
+
 ul, ol, dd {
     margin: 0;
     padding: 0;
@@ -6,7 +10,7 @@ ul, ol, dd {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: inherit;
     letter-spacing: 1px;
 }
@@ -17,7 +21,7 @@ p {
 }
 
 body {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: 'Hiragino Mincho Pro',serif;
     line-height: 1.5;
 }

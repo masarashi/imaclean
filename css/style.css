@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
 ul, ol, dd {
   margin: 0;
   padding: 0;
@@ -7,7 +11,7 @@ ul, ol, dd {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: inherit;
   letter-spacing: 1px;
 }
@@ -18,7 +22,7 @@ p {
 }
 
 body {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: 'Hiragino Mincho Pro',serif;
   line-height: 1.5;
 }
@@ -46,16 +50,10 @@ a:hover {
 }
 
 .section-title {
-  font-size: 1em;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
-}
-
-@media screen and (min-width: 768px) {
-  .section-title {
-    font-size: 1.8em;
-  }
 }
 
 .section-title.--center {
@@ -85,7 +83,6 @@ a:hover {
   background-color: green;
   height: 45px;
   width: 200px;
-  font-size: 1.1em;
   color: #fff;
   text-align: center;
   line-height: 45px;
@@ -125,7 +122,7 @@ a:hover {
 .contact__phone {
   margin-bottom: 50px;
   position: relative;
-  font-size: 1.8em;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -136,7 +133,7 @@ a:hover {
 
 .contact__phone::after {
   content: "24時間受付";
-  font-size: 0.5em;
+  font-size: 1.6rem;
   position: absolute;
   top: 40px;
   left: 0px;
@@ -178,11 +175,11 @@ a:hover {
 }
 
 .header-company__txt {
-  font-size: 0.8em;
+  font-size: 1rem;
 }
 
 .header-company__name {
-  font-size: 1.8em;
+  font-size: 3rem;
 }
 
 .l-footer {
@@ -200,28 +197,31 @@ a:hover {
 
 .l-footer__bottom {
   color: white;
-  font-size: 0.8em;
+  font-size: 1.2rem;
   text-align: center;
 }
 
 .footer-company-info {
-  font-size: 0.8em;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 768px) {
   .footer-company-info {
-    font-size: 1em;
+    font-size: 1.6rem;
   }
 }
 
 .footer-company-info__name {
+  font-size: 2rem;
+  text-align: center;
   color: white;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .footer-company-info__name {
-    font-size: 1.5em;
+    font-size: 2.4rem;
+    text-align: left;
   }
 }
 
@@ -265,7 +265,7 @@ a:hover {
 }
 
 .hero__txt {
-  font-size: 2em;
+  font-size: 3rem;
   position: absolute;
   top: 50px;
   left: 0px;
@@ -309,7 +309,7 @@ a:hover {
 }
 
 .aboutus__title {
-  font-size: 1em;
+  font-size: 1.6rem;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -319,12 +319,12 @@ a:hover {
 
 @media screen and (min-width: 768px) {
   .aboutus__title {
-    font-size: 1.5em;
+    font-size: 2rem;
   }
 }
 
 .aboutus__txt {
-  font-size: 0.8em;
+  font-size: 1.4rem;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
@@ -333,7 +333,7 @@ a:hover {
 
 @media screen and (min-width: 768px) {
   .aboutus__txt {
-    font-size: 1em;
+    font-size: 1.6rem;
   }
 }
 
@@ -382,25 +382,25 @@ a:hover {
 }
 
 .service-list__title {
+  font-size: 1.6rem;
   text-align: center;
-  font-size: 1em;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .service-list__title {
-    font-size: 1.5em;
+    font-size: 2rem;
     text-align: left;
   }
 }
 
 .service-list__txt {
-  font-size: 0.8em;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 768px) {
   .service-list__txt {
-    font-size: 1em;
+    font-size: 1.6rem;
   }
 }
 
@@ -473,20 +473,21 @@ a:hover {
 
 .page-title__aboutus {
   position: relative;
-  font-size: 4em;
+  font-size: 6rem;
   font-weight: bold;
   color: darkgreen;
   letter-spacing: 10px;
-  margin-top: 1em;
+  margin-top: 6rem;
   margin-bottom: 150px;
 }
 
 .page-title__aboutus::before {
   content: "About us";
   position: absolute;
-  font-size: 0.4em;
+  font-size: 2.5rem;
   font-weight: normal;
-  top: -1.5em;
+  top: -3rem;
+  left: 1rem;
 }
 
 .greeting {
@@ -517,12 +518,12 @@ a:hover {
 }
 
 .greeting__signature {
-  font-size: 1.5em;
+  font-size: 2.5rem;
   text-align: right;
 }
 
 .greeting__signature--secondary {
-  font-size: 0.6em;
+  font-size: 1.5rem;
 }
 
 .greeting__img {
@@ -597,20 +598,21 @@ th {
 
 .page-title__service {
   position: relative;
-  font-size: 4em;
+  font-size: 6rem;
   font-weight: bold;
   color: darkgreen;
   letter-spacing: 10px;
-  margin-top: 1em;
+  margin-top: 6rem;
   margin-bottom: 150px;
 }
 
 .page-title__service::before {
   content: "Service";
   position: absolute;
-  font-size: 0.4em;
+  font-size: 2.5rem;
   font-weight: normal;
-  top: -1.5em;
+  top: -3rem;
+  left: 1rem;
 }
 
 .service-point {
@@ -627,7 +629,7 @@ th {
 }
 
 .service-point__title {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
   color: darkgreen;
 }
@@ -648,7 +650,7 @@ th {
 
 .service-flow__num {
   color: darkgreen;
-  font-size: 2em;
+  font-size: 3rem;
   line-height: 50px;
   text-align: center;
   margin-right: 20px;
@@ -665,7 +667,7 @@ th {
 }
 
 .service-flow__title {
-  font-size: 1.5em;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */

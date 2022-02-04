@@ -9,10 +9,7 @@
 }
 
 .section-title {
-    @include pc {
-        font-size: 1.8em;
-    }
-    font-size: 1em;
+    font-size: 3rem;
     font-weight: bold;
     // color: darkgreen;
     text-align: center;
@@ -42,7 +39,6 @@
     background-color: green;
     height: 45px;
     width: 200px;
-    font-size: 1.1em;
     color: #fff;
     text-align: center;
     line-height: 45px;
@@ -69,10 +65,10 @@
         }
         margin-bottom: $spacing-m;
         position: relative;
-        font-size: 1.8em;
+        font-size: 3rem;
         &::after {
             content: "24時間受付";
-            font-size: 0.5em;
+            font-size: 1.6rem;
             position: absolute;
             top: 40px;
             left: 0px;

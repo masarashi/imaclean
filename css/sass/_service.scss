@@ -1,17 +1,18 @@
 .page-title__service {
     position: relative;
-    font-size: 4em;
+    font-size: 6rem;
     font-weight: bold;
     color: darkgreen;
     letter-spacing: 10px;
-    margin-top: 1em;
+    margin-top: 6rem;
     margin-bottom: $spacing-l;
     &::before {
         content: "Service";
         position: absolute;
-        font-size: 0.4em;
+        font-size: 2.5rem;
         font-weight: normal;
-        top: -1.5em;
+        top: -3rem;
+        left: 1rem;
     }
 }
 
@@ -24,7 +25,7 @@
         width: calc(50% - 20px);
     }
     &__title {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         font-weight: bold;
         color: darkgreen;
     }
@@ -41,7 +42,7 @@
     }
     &__num {
         color: darkgreen;
-        font-size: 2em;
+        font-size: 3rem;
         line-height: 50px;
         text-align: center;
         margin-right: 20px;
@@ -54,10 +55,9 @@
         flex: 1;
     }
     &__title {
-        font-size: 1.5em;
+        font-size: 2rem;
         margin-bottom: 10px;
     }
     &__txt {
-
     }
 }
