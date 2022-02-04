@@ -16,15 +16,17 @@
 .footer-company-info {
     @include pc {
         font-size: 1.6rem;
+        margin-right: 0;
+        margin-left: 0;
     }
     font-size: 1.2rem;
+    margin-right: auto;
+    margin-left: auto;
     &__name {
         @include pc {
             font-size: 2.4rem;
-            text-align: left;
         }
         font-size: 2rem;
-        text-align: center;
         color: white;
         margin-bottom: $spacing-s;
     }
@@ -40,6 +42,7 @@
 .footer-nav {
     @include pc {
         margin-left: auto;
+        display: block;
         &__item {
             & + & {
                 margin-top: $spacing-s;
