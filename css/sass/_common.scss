@@ -9,9 +9,7 @@
 }
 
 .section-title {
-    @include pc {
-        font-size: 3rem;
-    }
+    font-size: 3rem;
     font-weight: bold;
     // color: darkgreen;
     text-align: center;
@@ -20,6 +18,9 @@
         text-align: center;
     }
     &.--sp {
+        @include pc {
+            font-size: 3rem;
+        }
         font-size: 1.8rem;
     }
 }
