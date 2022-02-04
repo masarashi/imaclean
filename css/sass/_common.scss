@@ -9,7 +9,10 @@
 }
 
 .section-title {
-    font-size: 1.8em;
+    @include pc {
+        font-size: 1.8em;
+    }
+    font-size: 1em;
     font-weight: bold;
     // color: darkgreen;
     text-align: center;

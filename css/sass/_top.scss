@@ -35,12 +35,19 @@
         color: darkgreen;
     }
     &__title {
+        @include pc {
+            font-size: 1.5em;
+        }
+        font-size: 1em;
         order: 2;
-        font-size: 1.5em;
         text-align: center;
         margin-bottom: 20px;
     }
     &__txt {
+        @include pc {
+            font-size: 1em;
+        }
+        font-size: 0.8em;
         order: 3;
         padding: 0 10px;
     }
@@ -71,14 +78,18 @@
     }
     &__title {
         @include pc {
+            font-size: 1.5em;
             text-align: left;
         }
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1em;
         margin-bottom: 10px;
     }
     &__txt {
-        // padding-left: 10px;
+        @include pc {
+            font-size: 1em;
+        }
+        font-size: 0.8em;
     }
     &__img {
         @include pc {

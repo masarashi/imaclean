@@ -46,10 +46,16 @@ a:hover {
 }
 
 .section-title {
-  font-size: 1.8em;
+  font-size: 1em;
   font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 1.8em;
+  }
 }
 
 .section-title.--center {
@@ -198,10 +204,25 @@ a:hover {
   text-align: center;
 }
 
+.footer-company-info {
+  font-size: 0.8em;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-company-info {
+    font-size: 1em;
+  }
+}
+
 .footer-company-info__name {
-  font-size: 1.5em;
   color: white;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-company-info__name {
+    font-size: 1.5em;
+  }
 }
 
 .footer-company-info__address {
@@ -288,19 +309,32 @@ a:hover {
 }
 
 .aboutus__title {
+  font-size: 1em;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  font-size: 1.5em;
   text-align: center;
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .aboutus__title {
+    font-size: 1.5em;
+  }
+}
+
 .aboutus__txt {
+  font-size: 0.8em;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
   padding: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutus__txt {
+    font-size: 1em;
+  }
 }
 
 .aboutus__img {
@@ -349,13 +383,24 @@ a:hover {
 
 .service-list__title {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .service-list__title {
+    font-size: 1.5em;
     text-align: left;
+  }
+}
+
+.service-list__txt {
+  font-size: 0.8em;
+}
+
+@media screen and (min-width: 768px) {
+  .service-list__txt {
+    font-size: 1em;
   }
 }
 

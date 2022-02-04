@@ -14,8 +14,14 @@
 }
 
 .footer-company-info {
+    @include pc {
+        font-size: 1em;
+    }
+    font-size: 0.8em;
     &__name {
-        font-size: 1.5em;
+        @include pc {
+            font-size: 1.5em;
+        }
         color: white;
         margin-bottom: $spacing-s;
     }
