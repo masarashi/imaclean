@@ -29,13 +29,16 @@
 }
 
 .footer-nav {
-    margin-left: auto;
-    &__item {
-        & + & {
-            margin-top: $spacing-s;
-        }
-        & a {
-            color: white;
+    @include pc {
+        margin-left: auto;
+        &__item {
+            & + & {
+                margin-top: $spacing-s;
+            }
+            & a {
+                color: white;
+            }
         }
     }
+    display: none;
 }

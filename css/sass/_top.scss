@@ -118,8 +118,15 @@
         }
     }
     &__date {
+        @include pc {
+            display: inline;
+        }
+        display: block;
     }
     &__body {
-        margin-left: 20px;
+        @include pc {
+            margin-left: 20px;
+        }
+        margin-left: 0;
     }
 }

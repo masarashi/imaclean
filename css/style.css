@@ -214,15 +214,19 @@ a:hover {
 }
 
 .footer-nav {
-  margin-left: auto;
+  display: none;
 }
 
-.footer-nav__item + .footer-nav__item {
-  margin-top: 10px;
-}
-
-.footer-nav__item a {
-  color: white;
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    margin-left: auto;
+  }
+  .footer-nav__item + .footer-nav__item {
+    margin-top: 10px;
+  }
+  .footer-nav__item a {
+    color: white;
+  }
 }
 
 .hero {
@@ -402,8 +406,24 @@ a:hover {
   margin-top: 20px;
 }
 
+.news-list__date {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .news-list__date {
+    display: inline;
+  }
+}
+
 .news-list__body {
-  margin-left: 20px;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .news-list__body {
+    margin-left: 20px;
+  }
 }
 
 .page-title__aboutus {
