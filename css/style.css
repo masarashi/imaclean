@@ -805,9 +805,21 @@ th {
 }
 
 .service-point__title {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   font-weight: bold;
   color: darkgreen;
+}
+
+@media screen and (min-width: 959px) {
+  .service-point__title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .service-point__title {
+    font-size: 3rem;
+  }
 }
 
 .service-point__txt {
