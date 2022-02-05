@@ -50,7 +50,7 @@ Template Name: 企業情報
                         </tr>
                         <tr>
                             <th>所在地</th>
-                            <td>〒336-0026 埼玉県さいたま市南区辻 2-12-13</td>
+                            <td>〒336-0026<br>埼玉県さいたま市南区辻 2-12-13</td>
                         </tr>
                         <tr>
                             <th>電話番号</th>
@@ -69,14 +69,14 @@ Template Name: 企業情報
                             <td>内装解体、産業廃棄粒収集、一般家庭の片付け、運送</td>
                         </tr>
                     </table>
-                    <div class="overview__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.607721766337!2d139.66022941639642!3d35.83409918015907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018eae4e54be747%3A0x8ad88756ef0aa701!2z44CSMzM2LTAwMjYg5Z-8546J55yM44GV44GE44Gf44G-5biC5Y2X5Yy66L6777yS5LiB55uu77yR77yS4oiS77yR77yT!5e0!3m2!1sja!2sjp!4v1643112298980!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.607721766337!2d139.66022941639642!3d35.83409918015907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018eae4e54be747%3A0x8ad88756ef0aa701!2z44CSMzM2LTAwMjYg5Z-8546J55yM44GV44GE44Gf44G-5biC5Y2X5Yy66L6777yS5LiB55uu77yR77yS4oiS77yR77yT!5e0!3m2!1sja!2sjp!4v1643112298980!5m2!1sja!2sjp" class="overview__map" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="l-section">
+        <!-- <section class="l-section">
             <div class="wrapper">
                 <div class="company-pic">
                     <div class="company-pic__img">
@@ -90,7 +90,7 @@ Template Name: 企業情報
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="l-section">
             <div class="wrapper">

@@ -17,30 +17,57 @@
 }
 
 .greeting {
+    @include pc {
+        display: flex;
+        flex-flow: row;
+    }
     display: flex;
+    flex-flow: column;
     margin-right: auto;
     margin-left: auto;
     &__body {
+        @include pc {
+            order: 1;
+            padding-top: 0;
+            padding-right: 50px;
+            height: 360px;
+        }
+        order: 2;
         display: flex;
         flex-flow: column;
         justify-content: space-between;
         flex: 1;
-        padding-right: 50px;
-        padding-left: 0;
-        height: 360px;
+        padding-top: 30px;
+    }
+    &__txt {
+        @include pc {
+            font-size: 1.6rem;
+        }
+        font-size: 1.4rem;
     }
     &__signature {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         text-align: right;
+        padding-top: 10px;
         &--secondary {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
     }
     &__img {
+        @include pc {
+            order: 2;
+            width: 360px;
+        }
+        @include tab {
+            width: 360px;
+        }
+        order: 1;
         position: relative;
-        width: 360px;
+        width: 100%;
         height: 360px;
         overflow: hidden;
+        margin-right: auto;
+        margin-left: auto;
         img {
             position: absolute;
             top: 70%;
@@ -59,44 +86,69 @@
         margin-bottom: $spacing-m;
     }
     &__map {
-        text-align: center;
+        @include pc {
+            height: 400px;
+        }
+        @include tab {
+            height: 400px;
+        }
+        height: 300px;
+        width: 100%;
+        border: 0;
     }
 }
 
+table {
+    @include pc {
+        font-size: 1.6rem;
+    }
+    @include tab {
+        font-size: 1.6rem;
+    }
+    font-size: 1.4rem;
+}
+
 th, td {
+    @include pc {
+        padding: 0 30px;
+    }
     text-align: left;
     letter-spacing: 1px;
-    padding: 0 30px;
     border-top: 1px solid #dcdcdc;
     &, &:last-child {
         border-bottom: 1px solid #dcdcdc;
     }
 }
 
-table {
-}
-
 th {
-    width: 100px;
+    @include pc {
+        width: 100px;
+    }
+    @include tab {
+        width: 100px;
+    }
+    width: 70px;
     height: 70px;
 }
 
-.company-pic {
-    display: flex;
-    justify-content: space-between;
-    &__img {
-        position: relative;
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        overflow: hidden;
-        img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: auto;
-        }
-    }
-}
+// .company-pic {
+//     @include pc {
+//         display: flex;
+//         justify-content: space-between;
+//     }
+//     &__img {
+//         position: relative;
+//         width: 300px;
+//         height: 300px;
+//         border-radius: 50%;
+//         overflow: hidden;
+//         img {
+//             position: absolute;
+//             top: 50%;
+//             left: 50%;
+//             transform: translate(-50%, -50%);
+//             width: 100%;
+//             height: auto;
+//         }
+//     }
+// }

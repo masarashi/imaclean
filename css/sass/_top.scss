@@ -123,8 +123,10 @@
         width: 100%;
         overflow: hidden;
         &.--large {
-            height: 300px;
-            width: 300px;
+            @include pc {
+                height: 300px;
+                width: 300px;
+            }
         }
         img {
             position: absolute;
@@ -136,6 +138,10 @@
         }
     }
     &__price {
+        @include pc {
+            font-size: 1.6rem;
+        }
+        font-size: 1.4rem;
         margin-top: 30px;
     }
 }
