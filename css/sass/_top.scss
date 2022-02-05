@@ -40,6 +40,7 @@
         order: 2;
         padding: 10px;
         background-color: rgba(245, 245, 220, 0.3);
+        min-height: 120px;
     }
     &__icon {
         color: darkgreen;
@@ -95,6 +96,7 @@
         padding: 10px;
         order: 2;
         background-color: rgba(245, 245, 220, 0.3);
+        min-height: 120px;
     }
     &__title {
         @include pc {

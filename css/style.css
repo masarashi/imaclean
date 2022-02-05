@@ -348,6 +348,7 @@ a:hover {
           order: 2;
   padding: 10px;
   background-color: rgba(245, 245, 220, 0.3);
+  min-height: 120px;
 }
 
 @media screen and (min-width: 959px) {
@@ -438,6 +439,7 @@ a:hover {
       -ms-flex-order: 2;
           order: 2;
   background-color: rgba(245, 245, 220, 0.3);
+  min-height: 120px;
 }
 
 @media screen and (min-width: 959px) {
