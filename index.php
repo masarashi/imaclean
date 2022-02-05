@@ -4,7 +4,7 @@
         <div>
             <div class="hero">
                 <div class="hero__wrapper">
-                    <p class="hero__txt">さいたま市・東京近郊で内装解体・不用品・産業廃棄物運搬・ゴミ回収</p>
+                    <p class="hero__txt">笑顔と元気で承ります！</p>
                 </div>
             </div>
         </div>

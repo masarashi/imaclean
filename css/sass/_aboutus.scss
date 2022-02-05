@@ -32,11 +32,11 @@
             padding-right: 50px;
             height: 360px;
         }
-        @include tab {
-            width: 80%;
-            margin-right: auto;
-            margin-left: auto;
-        }
+        // @include tab {
+        //     width: 80%;
+        //     margin-right: auto;
+        //     margin-left: auto;
+        // }
         order: 2;
         display: flex;
         flex-flow: column;
@@ -109,6 +109,7 @@ table {
     }
     @include tab {
         font-size: 1.6rem;
+        width: 100%;
     }
     font-size: 1.4rem;
 }
@@ -127,13 +128,14 @@ th, td {
 
 th {
     @include pc {
-        width: 100px;
+        width: 120px;
     }
     @include tab {
-        width: 100px;
+        width: 120px;
     }
     width: 70px;
     height: 70px;
+    text-align: center;
 }
 
 // .company-pic {

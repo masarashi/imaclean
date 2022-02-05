@@ -298,8 +298,8 @@ a:hover {
 .hero__txt {
   font-size: 3rem;
   position: absolute;
-  top: 50px;
-  left: 0px;
+  top: 40px;
+  left: 40px;
 }
 
 .aboutus {
@@ -619,14 +619,6 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 599px) and (max-width: 959px) {
-  .greeting__body {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
 .greeting__txt {
   font-size: 1.4rem;
 }
@@ -721,6 +713,7 @@ table {
 @media screen and (min-width: 599px) and (max-width: 959px) {
   table {
     font-size: 1.6rem;
+    width: 100%;
   }
 }
 
@@ -743,17 +736,18 @@ th, th:last-child, td, td:last-child {
 th {
   width: 70px;
   height: 70px;
+  text-align: center;
 }
 
 @media screen and (min-width: 959px) {
   th {
-    width: 100px;
+    width: 120px;
   }
 }
 
 @media screen and (min-width: 599px) and (max-width: 959px) {
   th {
-    width: 100px;
+    width: 120px;
   }
 }
 
@@ -797,7 +791,7 @@ th {
 }
 
 .service-point__item {
-  padding: 0px 20px 20px 0px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 959px) {
