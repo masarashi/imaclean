@@ -11,7 +11,7 @@
 
         <section class="l-section">
             <div class="wrapper">
-                <h2 class="section-title --center --sp">I.M.Aクリーン産業にお任せください！</h2>
+                <h2 class="section-title --center">I.M.Aクリーン産業について</h2>
                 <div class="aboutus">
                     <div class="aboutus__item">
                         <div class="aboutus__body">

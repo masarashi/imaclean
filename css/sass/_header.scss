@@ -7,6 +7,9 @@
 }
 
 .gnav {
+    @include pc {
+        display: block;
+    }
     &__nav {
         display: flex;
     }
@@ -15,14 +18,15 @@
             margin-left: 30px;
         }
     }
+    display: none;
 }
 
 .header-company {
-    &__txt {
-        font-size: 1rem;
-    }
     &__name {
-        font-size: 3rem;
+        @include pc {
+            font-size: 3rem;
+        }
+        font-size: 2rem;
     }
 }
 
