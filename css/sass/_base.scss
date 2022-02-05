@@ -65,10 +65,17 @@ $max-width: 1080px;
     padding: 0 40px;
 }
 
-$breakpoint: 768px;
+$pc: 959px;
+$tab: 599px;
 
 @mixin pc {
-    @media screen and (min-width: $breakpoint) {
+    @media screen and (min-width: $pc) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (min-width: $tab) and (max-width: $pc) {
         @content;
     }
 }

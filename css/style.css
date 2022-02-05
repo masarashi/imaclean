@@ -64,7 +64,7 @@ a:hover {
   font-size: 1.8rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .section-title.--sp {
     font-size: 3rem;
   }
@@ -113,7 +113,7 @@ a:hover {
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -135,7 +135,7 @@ a:hover {
   font-size: 3rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .contact__phone {
     margin-bottom: 0px;
   }
@@ -150,7 +150,7 @@ a:hover {
   right: 0px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .contact__line {
     height: 100%;
     border-left: 1px solid darkgreen;
@@ -217,11 +217,17 @@ a:hover {
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .footer-company-info {
     font-size: 1.6rem;
     margin-right: 0;
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .footer-company-info {
+    font-size: 1.6rem;
   }
 }
 
@@ -231,7 +237,7 @@ a:hover {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .footer-company-info__name {
     font-size: 2.4rem;
   }
@@ -250,7 +256,7 @@ a:hover {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .footer-nav {
     margin-left: auto;
     display: block;
@@ -288,11 +294,15 @@ a:hover {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .aboutus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -311,10 +321,16 @@ a:hover {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .aboutus__item + .aboutus__item {
     margin-left: 20px;
   }
+}
+
+.aboutus__body {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .aboutus__icon {
@@ -323,14 +339,11 @@ a:hover {
 
 .aboutus__title {
   font-size: 1.8rem;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
   text-align: center;
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .aboutus__title {
     font-size: 2rem;
   }
@@ -338,13 +351,10 @@ a:hover {
 
 .aboutus__txt {
   font-size: 1.4rem;
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
   padding: 0 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .aboutus__txt {
     font-size: 1.6rem;
   }
@@ -354,9 +364,24 @@ a:hover {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  background-color: #f5f5dc;
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   height: 200px;
+  width: 100%;
+  overflow: hidden;
   margin-bottom: 20px;
+}
+
+.aboutus__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .service-list {
@@ -373,7 +398,7 @@ a:hover {
           flex-flow: column;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .service-list__wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -400,7 +425,7 @@ a:hover {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .service-list__title {
     font-size: 2rem;
     text-align: left;
@@ -411,7 +436,7 @@ a:hover {
   font-size: 1.4rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .service-list__txt {
     font-size: 1.6rem;
   }
@@ -429,10 +454,10 @@ a:hover {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .service-list__img {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
   }
 }
 
@@ -468,7 +493,7 @@ a:hover {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .news-list__date {
     display: inline;
   }
@@ -478,7 +503,7 @@ a:hover {
   margin-left: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 959px) {
   .news-list__body {
     margin-left: 20px;
   }
