@@ -619,6 +619,14 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .greeting__body {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .greeting__txt {
   font-size: 1.4rem;
 }
