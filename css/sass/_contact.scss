@@ -1,0 +1,15 @@
+.page-title__contact {
+    @include page-title;
+    &::before {
+        content: "Contact";
+    }
+}
+
+.contact__wrapper {
+    @include pc {
+        width: 50%;
+    }
+    @include wrapper;
+    margin-right: auto;
+    margin-left: auto;
+}

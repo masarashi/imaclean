@@ -41,6 +41,17 @@ a:hover {
   text-decoration: underline;
 }
 
+input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .l-section {
   margin-bottom: 150px;
 }
@@ -548,22 +559,52 @@ a:hover {
 }
 
 .page-title__aboutus {
+  font-size: 3.5rem;
+  margin-top: 3rem;
   position: relative;
-  font-size: 6rem;
   font-weight: bold;
   color: darkgreen;
   letter-spacing: 10px;
-  margin-top: 6rem;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 959px) {
+  .page-title__aboutus {
+    font-size: 6rem;
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .page-title__aboutus {
+    font-size: 6rem;
+    margin-bottom: 150px;
+  }
+}
+
+.page-title__aboutus::before {
+  font-size: 2rem;
+  content: "";
+  position: absolute;
+  font-weight: normal;
+  top: -3rem;
+  left: 0.5rem;
+}
+
+@media screen and (min-width: 959px) {
+  .page-title__aboutus::before {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .page-title__aboutus::before {
+    font-size: 2.5rem;
+  }
 }
 
 .page-title__aboutus::before {
   content: "About us";
-  position: absolute;
-  font-size: 2.5rem;
-  font-weight: normal;
-  top: -3rem;
-  left: 1rem;
 }
 
 .greeting {
@@ -754,22 +795,52 @@ th {
 }
 
 .page-title__service {
+  font-size: 3.5rem;
+  margin-top: 3rem;
   position: relative;
-  font-size: 6rem;
   font-weight: bold;
   color: darkgreen;
   letter-spacing: 10px;
-  margin-top: 6rem;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 959px) {
+  .page-title__service {
+    font-size: 6rem;
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .page-title__service {
+    font-size: 6rem;
+    margin-bottom: 150px;
+  }
+}
+
+.page-title__service::before {
+  font-size: 2rem;
+  content: "";
+  position: absolute;
+  font-weight: normal;
+  top: -3rem;
+  left: 0.5rem;
+}
+
+@media screen and (min-width: 959px) {
+  .page-title__service::before {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .page-title__service::before {
+    font-size: 2.5rem;
+  }
 }
 
 .page-title__service::before {
   content: "Service";
-  position: absolute;
-  font-size: 2.5rem;
-  font-weight: normal;
-  top: -3rem;
-  left: 1rem;
 }
 
 @media screen and (min-width: 959px) {
@@ -877,6 +948,70 @@ th {
 @media screen and (min-width: 959px) {
   .service-flow__txt {
     font-size: 1.6rem;
+  }
+}
+
+.page-title__contact {
+  font-size: 3.5rem;
+  margin-top: 3rem;
+  position: relative;
+  font-weight: bold;
+  color: darkgreen;
+  letter-spacing: 10px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 959px) {
+  .page-title__contact {
+    font-size: 6rem;
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .page-title__contact {
+    font-size: 6rem;
+    margin-bottom: 150px;
+  }
+}
+
+.page-title__contact::before {
+  font-size: 2rem;
+  content: "";
+  position: absolute;
+  font-weight: normal;
+  top: -3rem;
+  left: 0.5rem;
+}
+
+@media screen and (min-width: 959px) {
+  .page-title__contact::before {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .page-title__contact::before {
+    font-size: 2.5rem;
+  }
+}
+
+.page-title__contact::before {
+  content: "Contact";
+}
+
+.contact__wrapper {
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 959px) {
+  .contact__wrapper {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
