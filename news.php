@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: お知らせ
+ * Template Post Type: post
  */
 ?>
 
