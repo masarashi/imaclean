@@ -43,6 +43,38 @@
         font-size: 1.4rem;
     }
     &__title {
+        // 3 点リーダー 1 行の場合
+        // @include pc {
+        //     overflow: hidden;
+        //     text-overflow: ellipsis;
+        //     white-space: nowrap;
+        // }
+        // 3 点リーダー 2 行以上の場合
+        // color: black;
+        // height: calc(1.6rem * 2);
+        // line-height: 1.6rem;
+        // overflow: hidden;
+        // position: relative;
+        // word-wrap: break-word;
+        // &::before {
+        //     background: linear-gradient(
+        //         to right,
+        //         rgba(255, 255, 255, 0) 0%,
+        //         rgba(255, 255, 255, 1) 30% /* 背景色 */
+        //     );
+        //     bottom: 0;
+        //     content: "...";
+        //     padding-left: 1rem;
+        //     position: absolute;
+        //     right: 0;
+        // }
+        // &::after {
+        //     background: #fff;
+        //     content: "";
+        //     height: 100%;
+        //     position: absolute;
+        //     width: 100%;
+        // }
     }
 }
 
@@ -73,12 +105,20 @@
     justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
-    & .fa-chevron-right {
-        margin-left: 30px;
-    }
-    & .fa-chevron-left {
-        margin-right: 30px;
-    }
+    // & .fa-chevron-right {
+    //     margin-left: 10px;
+    // }
+    // & .fa-chevron-left {
+    //     margin-right: 10px;
+    // }
+}
+
+.postlink-prev i {
+    padding-right: 10px;
+}
+
+.postlink-next i {
+    padding-left: 10px;
 }
 
 .post-categories {

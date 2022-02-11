@@ -8,11 +8,7 @@ Template Name: サービス
 
 <main>
     <div class="wrapper">
-        <div class="breadcrumb">
-            <a href="<?php echo home_url(); ?>">TOP</a>
-            <span> > </span>
-            <a href="<?php echo home_url('service'); ?>">サービス</a>
-        </div>
+        <?php get_template_part('template-parts/breadcrumb'); ?>
         <h1 class="page-title__service">サービス</h1>
     </div>
     <section class="l-section">

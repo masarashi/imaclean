@@ -2,11 +2,7 @@
 
 <main>
     <div class="wrapper">
-        <div class="breadcrumb">
-            <a href="<?php echo home_url(); ?>">TOP</a>
-            <span> > </span>
-            <a href="<?php echo home_url('aboutus'); ?>"><?php the_title(); ?></a>
-        </div>
+        <?php get_template_part('template-parts/breadcrumb'); ?>
         <h1 class="page-title__contact"><?php the_title(); ?></h1>
     </div>
     <section class="l-section">

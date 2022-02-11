@@ -45,8 +45,8 @@ function my_pre_get_posts($query){
         // 表示件数
         $query->set('posts_per_page', 3,);
         // 表示カテゴリの絞り込み
-        $query->set('category_name', 'news');
-        return;
+        $query->set('category_name', '');
+        return 'post_date desc';
     }
 }
 

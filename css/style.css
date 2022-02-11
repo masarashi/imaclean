@@ -98,6 +98,10 @@ textarea {
   padding: 30px 0;
 }
 
+.breadcrumb__inner i {
+  padding: 0 10px;
+}
+
 .link-btn {
   display: inline-block;
   border-radius: 45px;
@@ -1073,12 +1077,12 @@ th {
   margin-left: auto;
 }
 
-.postlinks .fa-chevron-right {
-  margin-left: 30px;
+.postlink-prev i {
+  padding-right: 10px;
 }
 
-.postlinks .fa-chevron-left {
-  margin-right: 30px;
+.postlink-next i {
+  padding-left: 10px;
 }
 
 .post-categories {
