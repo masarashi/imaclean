@@ -110,28 +110,17 @@
         </section>
 
         <section class="l-section">
-            <div class="wrapper">
+            <div class="news-list__wrapper">
                 <h2 class="section-title">お知らせ</h2>
-                <ul class="news-list">
-                    <li class="news-list__item">
-                        <a href="">
-                            <span class="news-list__date">2021.12.22</span>
-                            <span class="news-list__body">あああああああああああああああああああああああああああああああ</span>
-                        </a>
-                    </li>
-                    <li class="news-list__item">
-                        <a href="">
-                            <span class="news-list__date">2021.12.22</span>
-                            <span class="news-list__body">あああああああああああああああああああああああああああああああ</span>
-                        </a>
-                    </li>
-                    <li class="news-list__item">
-                        <a href="">
-                            <span class="news-list__date">2021.12.22</span>
-                            <span class="news-list__body">あああああああああああああああああああああああああああああああ</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="news-list">
+                    <?php if (have_posts()): ?>
+                        <?php while (have_posts()): the_post(); ?>
+                            <div>
+                                <?php get_template_part('template-parts/loop', 'news'); ?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
                 <div class="l-seciton__link">
                     <a href="<?php echo home_url( 'news' ); ?>" class="link-btn"><i class="fas fa-arrow-circle-right"></i> お知らせ一覧</a>
                 </div>

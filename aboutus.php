@@ -11,7 +11,7 @@ Template Name: 企業情報
         <div class="breadcrumb">
             <a href="<?php echo home_url(); ?>">TOP</a>
             <span> > </span>
-            <a href="<?php echo home_url( 'aboutus' ); ?>">企業情報</a>
+            <a href="<?php echo home_url('aboutus'); ?>">企業情報</a>
         </div>
         <h1 class="page-title__aboutus">企業情報</h1>
     </div>

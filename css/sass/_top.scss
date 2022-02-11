@@ -148,23 +148,3 @@
     }
 }
 
-.news-list {
-    margin-bottom: $spacing-m;
-    &__item {
-        & + & {
-            margin-top: 20px;
-        }
-    }
-    &__date {
-        @include pc {
-            display: inline;
-        }
-        display: block;
-    }
-    &__body {
-        @include pc {
-            margin-left: 20px;
-        }
-        margin-left: 0;
-    }
-}

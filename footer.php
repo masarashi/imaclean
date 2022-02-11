@@ -8,10 +8,11 @@
                 </div>
                 <div class="footer-nav">
                     <ul>
-                        <li class="footer-nav__item"><a href="<?php echo home_url( 'sitemap' ); ?>">サイトマップ</a></li>
-                        <li class="footer-nav__item"><a href="<?php echo home_url( 'aboutus' ); ?>">企業情報</a></li>
-                        <li class="footer-nav__item"><a href="<?php echo home_url( 'service' ); ?>">サービス</a></li>
-                        <li class="footer-nav__item"><a href="<?php echo home_url( 'news' ); ?>">お問い合わせ</a></li>
+                        <li class="footer-nav__item"><a href="<?php echo home_url('sitemap'); ?>">サイトマップ</a></li>
+                        <li class="footer-nav__item"><a href="<?php echo home_url('aboutus'); ?>">企業情報</a></li>
+                        <li class="footer-nav__item"><a href="<?php echo home_url('service'); ?>">サービス</a></li>
+                        <li class="footer-nav__item"><a href="<?php echo home_url('news'); ?>">お知らせ</a></li>
+                        <li class="footer-nav__item"><a href="<?php echo home_url('news'); ?>">お問い合わせ</a></li>
                     </ul>
                 </div>
             </div>
