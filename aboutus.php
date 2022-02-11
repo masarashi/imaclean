@@ -8,11 +8,7 @@ Template Name: 企業情報
 
 <main>
     <div class="wrapper">
-        <div class="breadcrumb">
-            <a href="<?php echo home_url(); ?>">TOP</a>
-            <span> > </span>
-            <a href="<?php echo home_url('aboutus'); ?>">企業情報</a>
-        </div>
+        <?php get_template_part('template-parts/breadcrumb'); ?>
         <h1 class="page-title__aboutus">企業情報</h1>
     </div>
     <section class="l-section">
