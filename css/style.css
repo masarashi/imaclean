@@ -397,9 +397,23 @@ textarea {
 }
 
 .hero {
-  background-color: #f5f5dc;
-  height: 400px;
+  background-image: url(../image/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 959px) {
+  .hero {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .hero {
+    height: 400px;
+  }
 }
 
 .hero__wrapper {
@@ -411,10 +425,17 @@ textarea {
 }
 
 .hero__txt {
-  font-size: 3rem;
+  font-size: 2rem;
+  color: white;
   position: absolute;
   top: 40px;
   left: 40px;
+}
+
+@media screen and (min-width: 959px) {
+  .hero__txt {
+    font-size: 3rem;
+  }
 }
 
 .aboutus {

@@ -1,13 +1,26 @@
 .hero {
-    background-color: #f5f5dc;
-    height: 400px;
+    // background-color: #f5f5dc;
+    background-image: url(../image/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    @include pc {
+        height: 600px;
+    }
+    @include tab {
+        height: 400px;
+    }
+    height: 300px;
     margin-bottom: $spacing-m;
     &__wrapper {
         @include wrapper;
         position: relative;
     }
     &__txt {
-        font-size: 3rem;
+        @include pc {
+            font-size: 3rem;
+        }
+        font-size: 2rem;
+        color: white;
         position: absolute;
         top: 40px;
         left: 40px;
