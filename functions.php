@@ -53,8 +53,24 @@ function my_pre_get_posts($query){
 /**
  * css の読み込み
  */
-function custom_enqueue() {
-    wp_enqueue_style('reset_style', get_template_directory_uri() . '/css/normalize.css');
-    wp_enqueue_style('my_style', get_template_directory_uri() . '/css/style.css');
+function add_stylesheet() {
+    wp_register_style('reset', get_template_directory_uri().'/css/normalize.css', array(), '1.0', false);
+    wp_enqueue_style('main', get_template_directory_uri().'/css/style.css', array('reset'), '1.0', false);
 }
-add_action('wp_enqueue_scripts', 'custom_enqueue');
+add_action('wp_enqueue_scripts', 'add_stylesheet');
+
+/**
+ * javascript の読み込み
+ */
+function load_js() {
+	//管理画面を除外
+	if ( !is_admin() ){
+		//事前に読み込まれるjQueryを解除
+		wp_deregister_script( 'jquery' );
+		//Google CDNのjQueryを出力
+		wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), NULL, true );
+		//自作スクリプトや、jQueryのライブラリも同様に読み込みます。
+		wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true );
+	}
+}
+add_action( 'init', 'load_js' );
