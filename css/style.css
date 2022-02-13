@@ -1098,6 +1098,11 @@ th {
   padding: 1px;
 }
 
+.wp-pagenavi {
+  margin-top: 50px;
+  text-align: center;
+}
+
 .page-title__contact {
   font-size: 3.5rem;
   margin-top: 3rem;
@@ -1160,5 +1165,10 @@ th {
   .contact__wrapper {
     width: 50%;
   }
+}
+
+.smf-complete-content {
+  text-align: center;
+  margin-top: 100px;
 }
 /*# sourceMappingURL=style.css.map */
