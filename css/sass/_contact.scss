@@ -5,11 +5,12 @@
     }
 }
 
-.contact__wrapper {
+.contact__wrap {
     @include pc {
         width: 50%;
     }
-    @include wrapper;
+    max-width: 960px;
+    padding: 0 20px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -17,4 +18,43 @@
 .smf-complete-content {
     text-align: center;
     margin-top: 100px;
+}
+
+.contact {
+    @include pc {
+        display: flex;
+        // flex: 1;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+    margin-right: auto;
+    margin-left: auto;
+    &__aside {
+        flex: 1;
+        position: relative;
+        text-align: center;
+    }
+    &__phone {
+        @include pc {
+            margin-bottom: 0px;
+        }
+        margin-bottom: $spacing-m;
+        position: relative;
+        font-size: 3rem;
+        &::after {
+            content: "24時間受付";
+            font-size: 1.6rem;
+            position: absolute;
+            top: 40px;
+            left: 0px;
+            right: 0px;
+        }
+    }
+    &__line {
+        @include pc {
+            height: 100%;
+            border-left: 1px solid darkgreen;
+        }
+    }
 }

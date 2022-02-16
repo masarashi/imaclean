@@ -7,12 +7,10 @@
 <?php get_header(); ?>
 
 <main>
-    <div class="wrapper">
-        <?php get_template_part('template-parts/breadcrumb'); ?>
-        <h1 class="page-title__news">お知らせ</h1>
-    </div>
     <section class="l-section">
-        <div class="wrapper">
+        <div class="section__wrap">
+            <?php get_template_part('template-parts/breadcrumb'); ?>
+            <h1 class="page-title__news">お知らせ</h1>
             <?php
             // $categories = get_categories('parent=0');
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

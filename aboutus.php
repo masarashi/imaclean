@@ -7,12 +7,10 @@ Template Name: 企業情報
 <?php get_header(); ?>
 
 <main>
-    <div class="wrapper">
-        <?php get_template_part('template-parts/breadcrumb'); ?>
-        <h1 class="page-title__aboutus">企業情報</h1>
-    </div>
     <section class="l-section">
-        <div class="wrapper">
+        <div class="section__wrap">
+            <?php get_template_part('template-parts/breadcrumb'); ?>
+            <h1 class="page-title__aboutus">企業情報</h1>
             <h2 class="section-title">代表ご挨拶</h2>
             <div class="greeting">
                 <div class="greeting__body">
@@ -32,8 +30,8 @@ Template Name: 企業情報
         </div>
     </section>
     <section class="l-section">
-        <div class="wrapper">
-            <h2 class="section-title --center">会社概要</h2>
+        <div class="section__wrap">
+            <h2 class="section-title">会社概要</h2>
             <div class="overview">
                 <table class="overview__table">
                     <tr>
@@ -89,7 +87,7 @@ Template Name: 企業情報
     </section> -->
 
     <section class="l-section">
-        <div class="wrapper">
+        <div class="contact__wrap">
             <h2 class="section-title --center">お問い合わせ</h2>
             <div class="contact">
                 <div class="contact__aside">

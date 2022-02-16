@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 
 ul, ol, dd {
@@ -25,6 +26,15 @@ body {
     font-family: 'Hiragino Mincho Pro',serif;
     // font-family: 'Hiragino Kaku Gothic ProN',serif;
     line-height: 1.5;
+    // フッター固定
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    // フッター固定
+    flex: 1;
 }
 
 img {
@@ -35,9 +45,9 @@ a {
     text-decoration: none;
     color: #000;
     letter-spacing: 1px;
-    &:hover {
-        text-decoration: underline;
-    }
+    // &:hover {
+    //     text-decoration: underline;
+    // }
 }
 
 // 問い合わせフォームの入力ボックスがはみ出る問題の対処
@@ -64,20 +74,9 @@ $spacing-s: 10px;
 $spacing-m: 50px;
 $spacing-l: 150px;
 
-$max-width: 1080px;
-
-
-// mixin
-
-@mixin wrapper {
-    max-width: $max-width;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 40px;
-}
-
-$pc: 959px;
+$pc:  959px;
 $tab: 599px;
+$sp:  0px;
 
 @mixin pc {
     @media screen and (min-width: $pc) {
@@ -91,35 +90,14 @@ $tab: 599px;
     }
 }
 
+@mixin sp {
+    @media screen and (min-width: $sp) and (max-width: $tab) {
+        @content;
+    }
+}
 
-@mixin page-title {
-    @include pc {
-        font-size: 6rem;
-        margin-bottom: $spacing-l;
-    }
-    @include tab {
-        font-size: 6rem;
-        margin-bottom: $spacing-l;
-    }
-    font-size: 3.5rem;
-    margin-top: 3rem;
-    position: relative;
-    font-weight: bold;
-    color: darkgreen;
-    letter-spacing: 10px;
-    margin-bottom: $spacing-m;
-    &::before {
-        @include pc {
-            font-size: 2.5rem;
-        }
-        @include tab {
-            font-size: 2.5rem;
-        }
-        font-size: 2rem;
-        content: "";
-        position: absolute;
-        font-weight: normal;
-        top: -3rem;
-        left: 0.5rem;
+@mixin tab-and-sp {
+    @media screen and (min-width: $sp) and (max-width: $pc) {
+        @content;
     }
 }

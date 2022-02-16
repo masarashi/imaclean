@@ -44,10 +44,14 @@
 }
 
 .service-flow {
+    margin-bottom: $spacing-m;
     &__item {
         display: flex;
-        align-items: center;
-        margin-bottom: 50px;
+        place-items: center;
+        @include sp {
+            height: calc(750px / 5);
+        }
+        height: calc(550px / 5);
     }
     &__num {
         color: darkgreen;

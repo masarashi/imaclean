@@ -1,17 +1,15 @@
 <?php get_header(); ?>
 
 <main>
-    <div>
-        <div class="hero">
-            <div class="hero__wrapper">
-                <p class="hero__txt">笑顔と元気で承ります！</p>
-            </div>
+    <div class="hero">
+        <div class="hero__wrap">
+            <p class="hero__txt">笑顔と元気で承ります！</p>
         </div>
     </div>
-
     <section class="l-section">
-        <div class="wrapper">
-            <h2 class="section-title --center">I.M.Aクリーン産業について</h2>
+        <div class="section__wrap">
+            <p class="aboutus__message">さいたま市・東京近郊で内装解体・不用品・産業廃棄物運搬・ゴミ回収ならI.M.Aクリーン作業におまかせください！</p>
+            <h2 class="section-title">当社の特徴</h2>
             <div class="aboutus">
                 <div class="aboutus__item">
                     <div class="aboutus__body">
@@ -60,7 +58,7 @@
     </section>
 
     <section class="l-section">
-        <div class="wrapper">
+        <div class="section__wrap">
             <h2 class="section-title">サービス</h2>
             <ul class="service-list">
                 <li class="service-list__item">
@@ -110,7 +108,7 @@
     </section>
 
     <section class="l-section">
-        <div class="news-list__wrapper">
+        <div class="section__wrap">
             <h2 class="section-title">お知らせ</h2>
             <div class="news-list">
                 <?php if (have_posts()): ?>
@@ -128,7 +126,7 @@
     </section>
 
     <section class="l-section">
-        <div class="wrapper">
+        <div class="contact__wrap">
             <h2 class="section-title --center">お問い合わせ</h2>
             <div class="contact">
                 <div class="contact__aside">

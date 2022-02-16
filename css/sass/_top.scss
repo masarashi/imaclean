@@ -9,10 +9,13 @@
     @include tab {
         height: 400px;
     }
-    height: 300px;
+    height: 500px;
     margin-bottom: $spacing-m;
-    &__wrapper {
-        @include wrapper;
+    &__wrap {
+        max-width: 960px;
+        padding: 0 20px;
+        margin-right: auto;
+        margin-left: auto;
         position: relative;
     }
     &__txt {
@@ -22,7 +25,7 @@
         font-size: 2rem;
         color: white;
         position: absolute;
-        top: 40px;
+        top: 30px;
         left: 40px;
     }
 }
@@ -34,6 +37,17 @@
         justify-content: space-between;
     }
     margin-bottom: $spacing-m;
+    &__message {
+        @include pc {
+            text-align: center;
+        }
+        @include tab {
+            text-align: center;
+        }
+        margin-bottom: 50px;
+        // border-radius: 5px;
+        // padding: 0 10px;
+    }
     &__item {
         @include pc {
             margin-bottom: 0;
@@ -41,6 +55,7 @@
                 margin-left: 20px;
             }
         }
+        place-items: center;
         display: flex;
         flex-flow: column;
         width: 100%;
@@ -48,12 +63,15 @@
     }
     &__body {
         @include pc {
-            height: 220px;
+            // height: 220px;
         }
+        // @include tab {
+        //     width: 60%;
+        // }
         order: 2;
-        padding: 10px;
-        background-color: rgba(245, 245, 220, 0.3);
-        min-height: 120px;
+        padding: 30px 10px 10px 10px;
+        // background-color: rgba(245, 245, 220, 0.3);
+        // min-height: 120px;
     }
     &__icon {
         color: darkgreen;
@@ -62,7 +80,7 @@
         @include pc {
             font-size: 2rem;
         }
-        padding-bottom: 10px;
+        padding-bottom: 30px;
         font-size: 1.8rem;
         text-align: center;
     }
@@ -77,8 +95,11 @@
         position: relative;
         flex-shrink: 0;
         height: 200px;
-        width: 100%;
+        width: 200px;
         overflow: hidden;
+        border-radius: 50%;
+        margin-right: auto;
+        margin-left: auto;
         img {
             position: absolute;
             top: 50%;
@@ -98,31 +119,42 @@
         }
         display: flex;
         flex-flow: column;
+        place-items: center;
     }
     &__item {
         margin-bottom: 50px;
+        width: 100%;
     }
     &__body {
         @include pc {
-            padding-left: 20px;
+            padding: 0 0 0 30px;
         }
-        padding: 10px;
+        // @include tab {
+        //     width: 60%;
+        // }
+        // @include tab {
+        //     padding: 0 0 0 30px;
+        // }
+        padding: 30px 10px 10px 10px;
         order: 2;
-        background-color: rgba(245, 245, 220, 0.3);
-        min-height: 120px;
+        // background-color: rgba(245, 245, 220, 0.3);
+        // min-height: 120px;
     }
     &__title {
         @include pc {
             font-size: 2rem;
             text-align: left;
+            border-bottom: 1px solid gray;
+            padding-bottom: 10px;
         }
         font-size: 1.8rem;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
     }
     &__txt {
         @include pc {
             font-size: 1.6rem;
+            padding-top: 10px;
         }
         font-size: 1.4rem;
     }
@@ -135,8 +167,10 @@
         position: relative;
         flex-shrink: 0;
         height: 200px;
-        width: 100%;
+        // width: 100%;
+        width: 200px;
         overflow: hidden;
+        border-radius: 50%;
         &.--large {
             @include pc {
                 height: 300px;

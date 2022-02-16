@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 ul, ol, dd {
@@ -25,6 +26,20 @@ body {
   font-size: 1.6rem;
   font-family: 'Hiragino Mincho Pro',serif;
   line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 img {
@@ -35,10 +50,6 @@ a {
   text-decoration: none;
   color: #000;
   letter-spacing: 1px;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 input {
@@ -52,8 +63,40 @@ textarea {
           box-sizing: border-box;
 }
 
+.section__wrap {
+  max-width: 960px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.breadcrumb {
+  color: gray;
+  padding: 15px 0 30px 0;
+}
+
+.breadcrumb a {
+  color: gray;
+}
+
+.breadcrumb__inner i {
+  padding: 0 10px;
+}
+
 .l-section {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 959px) {
+  .l-section {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .l-section {
+    margin-bottom: 150px;
+  }
 }
 
 .l-seciton__link {
@@ -61,10 +104,22 @@ textarea {
 }
 
 .section-title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 959px) {
+  .section-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .section-title {
+    font-size: 2.4rem;
+  }
 }
 
 .section-title.--center {
@@ -81,27 +136,6 @@ textarea {
   }
 }
 
-.wrapper {
-  max-width: 1080px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 40px;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.breadcrumb {
-  padding: 30px 0;
-}
-
-.breadcrumb__inner i {
-  padding: 0 10px;
-}
-
 .link-btn {
   display: inline-block;
   border-radius: 45px;
@@ -113,80 +147,19 @@ textarea {
   line-height: 45px;
 }
 
-.contact {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media screen and (min-width: 959px) {
-  .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.contact__aside {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  position: relative;
-  text-align: center;
-}
-
-.contact__phone {
-  margin-bottom: 50px;
-  position: relative;
-  font-size: 3rem;
-}
-
-@media screen and (min-width: 959px) {
-  .contact__phone {
-    margin-bottom: 0px;
-  }
-}
-
-.contact__phone::after {
-  content: "24時間受付";
-  font-size: 1.6rem;
-  position: absolute;
-  top: 40px;
-  left: 0px;
-  right: 0px;
-}
-
-@media screen and (min-width: 959px) {
-  .contact__line {
-    height: 100%;
-    border-left: 1px solid darkgreen;
-  }
-}
-
 .l-header {
-  max-width: 1080px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 80px;
+  max-width: 960px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80px;
+  place-items: center;
 }
 
 @media screen and (min-width: 959px) {
@@ -214,20 +187,22 @@ textarea {
 }
 
 /*========= ナビゲーションのためのCSS ===============*/
-#g-nav {
-  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
-  position: fixed;
-  z-index: 999;
-  /*ナビのスタート位置と形状*/
-  top: -120%;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  /*ナビの高さ*/
-  background: green;
-  /*動き*/
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
+@media screen and (min-width: 0px) and (max-width: 959px) {
+  #g-nav {
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position: fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+    top: -120%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    background: green;
+    /*動き*/
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+  }
 }
 
 /*アクティブクラスがついたら位置を0に*/
@@ -237,41 +212,55 @@ textarea {
 
 /*ナビゲーションの縦スクロール*/
 /*ナビゲーション*/
-#g-nav ul {
-  /*ナビゲーション天地中央揃え*/
-  position: absolute;
-  z-index: 999;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+@media screen and (min-width: 0px) and (max-width: 959px) {
+  #g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 /*リストのレイアウト設定*/
-#g-nav li {
-  list-style: none;
-  text-align: center;
+@media screen and (min-width: 0px) and (max-width: 959px) {
+  #g-nav li {
+    list-style: none;
+    text-align: center;
+  }
 }
 
-#g-nav li a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: bold;
+@media screen and (min-width: 0px) and (max-width: 959px) {
+  #g-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
 }
 
 /*========= ボタンのためのCSS ===============*/
-.openbtn {
-  position: fixed;
-  z-index: 9999;
-  /*ボタンを最前面に*/
-  right: 10px;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
+@media screen and (min-width: 959px) {
+  .openbtn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 959px) {
+  .openbtn {
+    position: fixed;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /*×に変化*/
@@ -321,8 +310,7 @@ textarea {
 
 .l-footer {
   background-color: green;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 
 .l-footer__wrapper {
@@ -330,6 +318,13 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
+  max-width: 960px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .l-footer__bottom {
@@ -400,7 +395,7 @@ textarea {
   background-image: url(../image/hero.jpg);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 500px;
   margin-bottom: 50px;
 }
 
@@ -416,11 +411,11 @@ textarea {
   }
 }
 
-.hero__wrapper {
-  max-width: 1080px;
+.hero__wrap {
+  max-width: 960px;
+  padding: 0 20px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 40px;
   position: relative;
 }
 
@@ -428,7 +423,7 @@ textarea {
   font-size: 2rem;
   color: white;
   position: absolute;
-  top: 40px;
+  top: 30px;
   left: 40px;
 }
 
@@ -457,7 +452,24 @@ textarea {
   }
 }
 
+.aboutus__message {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 959px) {
+  .aboutus__message {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
+  .aboutus__message {
+    text-align: center;
+  }
+}
+
 .aboutus__item {
+  place-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,15 +494,7 @@ textarea {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  padding: 10px;
-  background-color: rgba(245, 245, 220, 0.3);
-  min-height: 120px;
-}
-
-@media screen and (min-width: 959px) {
-  .aboutus__body {
-    height: 220px;
-  }
+  padding: 30px 10px 10px 10px;
 }
 
 .aboutus__icon {
@@ -498,7 +502,7 @@ textarea {
 }
 
 .aboutus__title {
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   font-size: 1.8rem;
   text-align: center;
 }
@@ -527,8 +531,11 @@ textarea {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 200px;
-  width: 100%;
+  width: 200px;
   overflow: hidden;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .aboutus__img img {
@@ -554,6 +561,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  place-items: center;
 }
 
 @media screen and (min-width: 959px) {
@@ -567,33 +575,34 @@ textarea {
 
 .service-list__item {
   margin-bottom: 50px;
+  width: 100%;
 }
 
 .service-list__body {
-  padding: 10px;
+  padding: 30px 10px 10px 10px;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  background-color: rgba(245, 245, 220, 0.3);
-  min-height: 120px;
 }
 
 @media screen and (min-width: 959px) {
   .service-list__body {
-    padding-left: 20px;
+    padding: 0 0 0 30px;
   }
 }
 
 .service-list__title {
   font-size: 1.8rem;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 959px) {
   .service-list__title {
     font-size: 2rem;
     text-align: left;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
   }
 }
 
@@ -604,6 +613,7 @@ textarea {
 @media screen and (min-width: 959px) {
   .service-list__txt {
     font-size: 1.6rem;
+    padding-top: 10px;
   }
 }
 
@@ -615,8 +625,9 @@ textarea {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 200px;
-  width: 100%;
+  width: 200px;
   overflow: hidden;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 959px) {
@@ -1005,14 +1016,22 @@ th {
   }
 }
 
+.service-flow {
+  margin-bottom: 50px;
+}
+
 .service-flow__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 50px;
+  place-items: center;
+  height: calc(550px / 5);
+}
+
+@media screen and (min-width: 0px) and (max-width: 599px) {
+  .service-flow__item {
+    height: calc(750px / 5);
+  }
 }
 
 .service-flow__num {
@@ -1102,10 +1121,8 @@ th {
 }
 
 .news-list__wrapper {
-  max-width: 1080px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 40px;
+  max-width: 960px;
+  padding: 0 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1273,17 +1290,15 @@ th {
   content: "Contact";
 }
 
-.contact__wrapper {
-  max-width: 1080px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 40px;
+.contact__wrap {
+  max-width: 960px;
+  padding: 0 20px;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media screen and (min-width: 959px) {
-  .contact__wrapper {
+  .contact__wrap {
     width: 50%;
   }
 }
@@ -1291,5 +1306,61 @@ th {
 .smf-complete-content {
   text-align: center;
   margin-top: 100px;
+}
+
+.contact {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 959px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100px;
+  }
+}
+
+.contact__aside {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.contact__phone {
+  margin-bottom: 50px;
+  position: relative;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 959px) {
+  .contact__phone {
+    margin-bottom: 0px;
+  }
+}
+
+.contact__phone::after {
+  content: "24時間受付";
+  font-size: 1.6rem;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  right: 0px;
+}
+
+@media screen and (min-width: 959px) {
+  .contact__line {
+    height: 100%;
+    border-left: 1px solid darkgreen;
+  }
 }
 /*# sourceMappingURL=style.css.map */

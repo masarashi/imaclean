@@ -1,7 +1,64 @@
+
 // Layout
 
+.section__wrap {
+    max-width: 960px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin page-title {
+    @include pc {
+        font-size: 6rem;
+        margin-bottom: $spacing-l;
+    }
+    @include tab {
+        font-size: 6rem;
+        margin-bottom: $spacing-l;
+    }
+    font-size: 3.5rem;
+    margin-top: 3rem;
+    position: relative;
+    font-weight: bold;
+    color: darkgreen;
+    letter-spacing: 10px;
+    margin-bottom: $spacing-m;
+    &::before {
+        @include pc {
+            font-size: 2.5rem;
+        }
+        @include tab {
+            font-size: 2.5rem;
+        }
+        font-size: 2rem;
+        content: "";
+        position: absolute;
+        font-weight: normal;
+        top: -3rem;
+        left: 0.5rem;
+    }
+}
+
+.breadcrumb {
+    color: gray;
+    padding: 15px 0 30px 0;
+    & a {
+        color: gray;
+    }
+    &__inner i {
+        padding: 0 10px;
+    }
+}
+
 .l-section {
-    margin-bottom: $spacing-l;
+    @include pc {
+        margin-bottom: $spacing-l;
+    }
+    @include tab {
+        margin-bottom: $spacing-l;
+    }
+    margin-bottom: $spacing-m;
 }
 
 .l-seciton__link {
@@ -9,9 +66,14 @@
 }
 
 .section-title {
-    font-size: 3rem;
+    @include pc {
+        font-size: 2.4rem;
+    }
+    @include tab {
+        font-size: 2.4rem;
+    }
+    font-size: 2rem;
     font-weight: bold;
-    // color: darkgreen;
     text-align: center;
     margin-bottom: $spacing-m;
     &.--center {
@@ -25,25 +87,6 @@
     }
 }
 
-.wrapper {
-    @include wrapper;
-}
-
-.flex {
-    display: flex;
-    // align-items: flex-end;
-}
-
-.breadcrumb {
-    padding: 30px 0;
-    &__inner i {
-        padding: 0 10px;
-    }
-}
-
-
-
-
 .link-btn {
     display: inline-block;
     border-radius: 45px;
@@ -53,44 +96,4 @@
     color: #fff;
     text-align: center;
     line-height: 45px;
-}
-
-.contact {
-    @include pc {
-        display: flex;
-    }
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    &__aside {
-        flex: 1;
-        position: relative;
-        text-align: center;
-    }
-    &__phone {
-        @include pc {
-            margin-bottom: 0px;
-        }
-        margin-bottom: $spacing-m;
-        position: relative;
-        font-size: 3rem;
-        &::after {
-            content: "24時間受付";
-            font-size: 1.6rem;
-            position: absolute;
-            top: 40px;
-            left: 0px;
-            right: 0px;
-        }
-    }
-    &__line {
-        @include pc {
-            height: 100%;
-            border-left: 1px solid darkgreen;
-        }
-        // display: none;
-    }
 }

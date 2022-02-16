@@ -11,7 +11,8 @@
         @include pc {
             width: 50%;
         }
-        @include wrapper;
+        max-width: 960px;
+        padding: 0 20px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -19,6 +20,11 @@
         @include pc {
             display: flex;
         }
+        // @include tab {
+        //     width: 60%;
+        //     margin-right: auto;
+        //     margin-left: auto;
+        // }
         place-items: center;
         padding: 10px;
     }

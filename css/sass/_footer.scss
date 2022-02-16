@@ -1,10 +1,14 @@
 .l-footer {
     background-color: green;
-    padding-top: $spacing-m;
-    padding-bottom: $spacing-m;
+    padding: $spacing-m 0;
     &__wrapper {
         display: flex;
         margin-bottom: $spacing-m;
+        max-width: 960px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: space-between;
     }
     &__bottom {
         color: white;

@@ -7,12 +7,10 @@ Template Name: サービス
 <?php get_header(); ?>
 
 <main>
-    <div class="wrapper">
-        <?php get_template_part('template-parts/breadcrumb'); ?>
-        <h1 class="page-title__service">サービス</h1>
-    </div>
     <section class="l-section">
-        <div class="wrapper">
+        <div class="section__wrap">
+            <?php get_template_part('template-parts/breadcrumb'); ?>
+            <h1 class="page-title__service">サービス</h1>
             <h2 class="section-title">I.M.Aクリーン産業のサービス</h2>
             <ul class="service-list">
                 <li class="service-list__item">
@@ -80,7 +78,7 @@ Template Name: サービス
     </section>
 
     <section class="l-section">
-        <div class="wrapper">
+        <div class="section__wrap">
             <h2 class="section-title">サービスの流れ</h2>
             <ul class="service-flow">
                 <li class="service-flow__item">
@@ -126,7 +124,7 @@ Template Name: サービス
     </section>
 
     <section class="l-section">
-        <div class="wrapper">
+        <div class="section__wrap">
             <h2 class="section-title">I.M.Aクリーン産業の強み</h2>
             <div class="service-point">
                 <div class="service-point__item">
@@ -158,7 +156,7 @@ Template Name: サービス
     </section>
 
     <section class="l-section">
-        <div class="wrapper">
+        <div class="contact__wrap">
             <h2 class="section-title --center">お問い合わせ</h2>
             <div class="contact">
                 <div class="contact__aside">
