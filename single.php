@@ -1,12 +1,10 @@
 <?php get_header(); ?>
 
 <main>
-    <div class="wrapper">
-        <?php get_template_part('template-parts/breadcrumb'); ?>
-        <h1 class="page-title__news">お知らせ</h1>
-    </div>
     <section class="l-section">
-        <div class="wrapper">
+        <div class="section__wrap">
+            <?php get_template_part('template-parts/breadcrumb'); ?>
+            <h1 class="page-title__news">お知らせ</h1>
             <?php if (have_posts()): ?>
                 <?php while (have_posts()): the_post(); ?>
                     <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>

@@ -176,6 +176,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 959px) {
+  .gnav-list__item.--home {
+    display: none;
+  }
+}
+
 .header-company__name {
   font-size: 2rem;
 }
@@ -188,7 +194,7 @@ textarea {
 
 /*========= ナビゲーションのためのCSS ===============*/
 @media screen and (min-width: 0px) and (max-width: 959px) {
-  #g-nav {
+  #gnav {
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position: fixed;
     z-index: 999;
@@ -196,7 +202,7 @@ textarea {
     top: -120%;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     /*ナビの高さ*/
     background: green;
     /*動き*/
@@ -206,14 +212,14 @@ textarea {
 }
 
 /*アクティブクラスがついたら位置を0に*/
-#g-nav.panelactive {
+#gnav.panelactive {
   top: 0;
 }
 
 /*ナビゲーションの縦スクロール*/
 /*ナビゲーション*/
 @media screen and (min-width: 0px) and (max-width: 959px) {
-  #g-nav ul {
+  #gnav ul {
     /*ナビゲーション天地中央揃え*/
     position: absolute;
     z-index: 999;
@@ -226,14 +232,14 @@ textarea {
 
 /*リストのレイアウト設定*/
 @media screen and (min-width: 0px) and (max-width: 959px) {
-  #g-nav li {
+  #gnav li {
     list-style: none;
     text-align: center;
   }
 }
 
 @media screen and (min-width: 0px) and (max-width: 959px) {
-  #g-nav li a {
+  #gnav li a {
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -319,7 +325,7 @@ textarea {
   display: flex;
   margin-bottom: 50px;
   max-width: 960px;
-  width: 100%;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-pack: justify;
@@ -341,7 +347,7 @@ textarea {
 
 @media screen and (min-width: 959px) {
   .footer-company-info {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-right: 0;
     margin-left: 0;
   }
@@ -349,17 +355,23 @@ textarea {
 
 @media screen and (min-width: 599px) and (max-width: 959px) {
   .footer-company-info {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
 .footer-company-info__name {
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: white;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 959px) {
+  .footer-company-info__name {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 959px) {
   .footer-company-info__name {
     font-size: 2.4rem;
   }
@@ -383,8 +395,13 @@ textarea {
     margin-left: auto;
     display: block;
   }
+  .footer-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .footer-nav__item + .footer-nav__item {
-    margin-top: 10px;
+    margin-left: 20px;
   }
   .footer-nav__item a {
     color: white;

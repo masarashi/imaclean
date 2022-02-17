@@ -62,11 +62,9 @@
             <h2 class="section-title">サービス</h2>
             <ul class="service-list">
                 <li class="service-list__item">
-                    <a href="" class="service-list__wrapper">
+                    <a href="service#service-01" class="service-list__wrapper">
                         <div class="service-list__body">
-                            <div class="service-list__title">
-                                不用品・ゴミ回収
-                            </div>
+                            <div class="service-list__title">不用品・ゴミ回収</div>
                             <p class="service-list__txt">大手処理施設と付き合いがあるので、安心してお任せいただけます。一般家庭でのごみ処理や、粗大ごみ・不用 品・廃棄物の回収も行っております。笑顔と元気だけは必ず忘れずに作業し、出来るだけお客様の要望に応えら れるよう努力します。長いお付き合いが出来るような対応します。</p>
                         </div>
                         <div class="service-list__img">
@@ -75,11 +73,9 @@
                     </a>
                 </li>
                 <li class="service-list__item">
-                    <a href="" class="service-list__wrapper">
+                    <a href="service#service-02" class="service-list__wrapper">
                         <div class="service-list__body">
-                            <div class="service-list__title">
-                                運送
-                            </div>
+                            <div class="service-list__title">運送</div>
                             <p class="service-list__txt">トラック1日・半日貸切・チャーター便など、お客様のニーズに合った利用ができます。引っ越しなどに運転手付きでお手伝いします。</p>
                         </div>
                         <div class="service-list__img">
@@ -88,11 +84,9 @@
                     </a>
                 </li>
                 <li class="service-list__item">
-                    <a href="" class="service-list__wrapper">
+                    <a href="service#service-03" class="service-list__wrapper">
                         <div class="service-list__body">
-                            <div class="service-list__title">
-                                庭のお掃除・家の模様替え
-                            </div>
+                            <div class="service-list__title">庭のお掃除・家の模様替え</div>
                             <p class="service-list__txt">庭のお掃除や家の模様替えなど、一人で出来ない事、一人で持ち上げられないタンスや冷蔵庫など、お手伝いします。</p>
                         </div>
                         <div class="service-list__img">

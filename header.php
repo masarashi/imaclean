@@ -14,9 +14,9 @@
             <h1 class="header-company__name"><a href="<?php echo home_url(); ?>" alt="I.M.Aクリーン産業株式会社">I.M.Aクリーン産業株式会社</a></h1>
         </div>
         <div class="openbtn"><span></span><span></span><span></span></div>
-        <nav id="g-nav">
+        <nav id="gnav">
             <ul class="gnav-list">
-                <li class="gnav-list__item"><a href="<?php echo home_url(); ?>">HOME</a></li>
+                <li class="gnav-list__item --home"><a href="<?php echo home_url(); ?>">ホーム</a></li>
                 <li class="gnav-list__item"><a href="<?php echo home_url('aboutus'); ?>">企業情報</a></li>
                 <li class="gnav-list__item"><a href="<?php echo home_url('service'); ?>">サービス</a></li>
                 <li class="gnav-list__item"><a href="<?php echo home_url('news'); ?>">お知らせ</a></li>
