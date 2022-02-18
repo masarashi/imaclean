@@ -8,7 +8,7 @@
     </div>
     <section class="l-section">
         <div class="section__wrap">
-            <p class="aboutus__message">さいたま市・東京近郊で内装解体・不用品・産業廃棄物運搬・ゴミ回収ならI.M.Aクリーン作業におまかせください！</p>
+            <p class="aboutus__message">さいたま市・東京近郊で内装解体・不用品・産業廃棄物運搬・ゴミ回収ならI.M.Aクリーン産業におまかせください！</p>
             <h2 class="section-title">当社の特徴</h2>
             <div class="aboutus">
                 <div class="aboutus__item">
