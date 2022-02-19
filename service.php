@@ -21,8 +21,8 @@ Template Name: サービス
                             <div class="service-list__price">
                                 <p>参考価格</p>
                                 <ul>
-                                    <li>¥10,000〜</li>
-                                    <li>¥20,000〜</li>
+                                    <li>¥〇〇〇〇〇〜</li>
+                                    <li>¥〇〇〇〇〇〜</li>
                                 </ul>
                             </div>
                         </div>
@@ -39,8 +39,8 @@ Template Name: サービス
                             <div class="service-list__price">
                                 <p>参考価格</p>
                                 <ul>
-                                    <li>¥10,000〜</li>
-                                    <li>¥20,000〜</li>
+                                    <li>¥〇〇〇〇〇〜</li>
+                                    <li>¥〇〇〇〇〇〜</li>
                                 </ul>
                             </div>
                         </div>
@@ -57,8 +57,8 @@ Template Name: サービス
                             <div class="service-list__price">
                                 <p>参考価格</p>
                                 <ul>
-                                    <li>¥10,000〜</li>
-                                    <li>¥20,000〜</li>
+                                    <li>¥〇〇〇〇〇〜</li>
+                                    <li>¥〇〇〇〇〇〜</li>
                                 </ul>
                             </div>
                         </div>
