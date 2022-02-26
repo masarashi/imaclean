@@ -1,7 +1,7 @@
     <footer class="l-footer">
         <div class="l-footer__wrapper">
             <div class="footer-company-info">
-                <p class="footer-company-info__name">I.M.Aクリーン産業株式会社</p>
+                <a class="footer-company-info__name" href="<?php echo home_url(''); ?>">I.M.Aクリーン産業株式会社</a>
                 <p class="footer-company-info__address">〒336-0026 埼玉県さいたま市南区辻 2-12-13</p>
                 <p class="footer-company-info__phone">TEL: 048-838-7202 / FAX: 048-838-7202</p>
             </div>
@@ -10,7 +10,7 @@
                     <li class="footer-nav__item"><a href="<?php echo home_url('aboutus'); ?>">企業情報</a></li>
                     <li class="footer-nav__item"><a href="<?php echo home_url('service'); ?>">サービス</a></li>
                     <li class="footer-nav__item"><a href="<?php echo home_url('news'); ?>">お知らせ</a></li>
-                    <li class="footer-nav__item"><a href="<?php echo home_url('news'); ?>">お問い合わせ</a></li>
+                    <li class="footer-nav__item"><a href="<?php echo home_url('contact'); ?>">お問い合わせ</a></li>
                 </ul>
             </div>
         </div>
