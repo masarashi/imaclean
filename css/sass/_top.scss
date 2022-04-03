@@ -61,18 +61,6 @@
         width: 100%;
         margin-bottom: $spacing-m;
     }
-    &__body {
-        @include pc {
-            // height: 220px;
-        }
-        // @include tab {
-        //     width: 60%;
-        // }
-        order: 2;
-        padding: 30px 10px 10px 10px;
-        // background-color: rgba(245, 245, 220, 0.3);
-        // min-height: 120px;
-    }
     &__icon {
         color: darkgreen;
     }
@@ -80,15 +68,33 @@
         @include pc {
             font-size: 2rem;
         }
+        position: relative;
         padding-bottom: 30px;
+        // padding-left: 150px;
         font-size: 1.8rem;
         text-align: center;
+        line-height: 1.8rem;
+        width: 100%;
+        &::before {
+            content: attr(data-number);
+            position: absolute;
+            left: -15px;
+            // left: 75px;
+            display: block;
+            // margin-bottom: 50px;
+            color: darkgreen;
+            font-size: 4rem;
+            font-weight: bold;
+        }
     }
     &__txt {
         @include pc {
             font-size: 1.6rem;
         }
+        order: 2;
         font-size: 1.4rem;
+        padding: 30px 10px 10px 10px;
+        text-align: justify;
     }
     &__img {
         order: 1;
@@ -97,7 +103,7 @@
         height: 200px;
         width: 200px;
         overflow: hidden;
-        border-radius: 50%;
+        // border-radius: 50%;
         margin-right: auto;
         margin-left: auto;
         img {
@@ -106,7 +112,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 }

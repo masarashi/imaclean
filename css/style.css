@@ -24,13 +24,15 @@ p {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Hiragino Mincho Pro',serif;
+  font-family: 'Hiragino Kaku Gothic ProN',serif;
   line-height: 1.5;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
@@ -38,6 +40,7 @@ body {
 
 main {
   -webkit-box-flex: 1;
+  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
@@ -104,22 +107,34 @@ textarea {
 }
 
 .section-title {
+  position: relative;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 @media screen and (min-width: 959px) {
   .section-title {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 599px) and (max-width: 959px) {
   .section-title {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  border-radius: 3px;
+  background: green;
 }
 
 .section-title.--center {
@@ -154,6 +169,7 @@ textarea {
 
 .l-header {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: 80px;
@@ -162,6 +178,7 @@ textarea {
   margin-right: auto;
   margin-left: auto;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   place-items: center;
@@ -170,6 +187,7 @@ textarea {
 @media screen and (min-width: 959px) {
   .gnav-list {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -326,6 +344,7 @@ textarea {
 
 .l-footer__wrapper {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
@@ -334,6 +353,7 @@ textarea {
   margin-right: auto;
   margin-left: auto;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -401,6 +421,7 @@ textarea {
   }
   .footer-nav ul {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -461,13 +482,16 @@ textarea {
 @media screen and (min-width: 959px) {
   .aboutus {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
         -ms-flex-flow: row;
             flex-flow: row;
     -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
@@ -492,10 +516,12 @@ textarea {
 .aboutus__item {
   place-items: center;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
   width: 100%;
@@ -511,21 +537,17 @@ textarea {
   }
 }
 
-.aboutus__body {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  padding: 30px 10px 10px 10px;
-}
-
 .aboutus__icon {
   color: darkgreen;
 }
 
 .aboutus__title {
+  position: relative;
   padding-bottom: 30px;
   font-size: 1.8rem;
   text-align: center;
+  line-height: 1.8rem;
+  width: 100%;
 }
 
 @media screen and (min-width: 959px) {
@@ -534,8 +556,24 @@ textarea {
   }
 }
 
+.aboutus__title::before {
+  content: attr(data-number);
+  position: absolute;
+  left: -15px;
+  display: block;
+  color: darkgreen;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
 .aboutus__txt {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
   font-size: 1.4rem;
+  padding: 30px 10px 10px 10px;
+  text-align: justify;
 }
 
 @media screen and (min-width: 959px) {
@@ -546,15 +584,16 @@ textarea {
 
 .aboutus__img {
   -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
   position: relative;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
   height: 200px;
   width: 200px;
   overflow: hidden;
-  border-radius: 50%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -566,8 +605,8 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .service-list {
@@ -576,10 +615,12 @@ textarea {
 
 .service-list__wrapper {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
   place-items: center;
@@ -589,6 +630,7 @@ textarea {
   .service-list__wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
         -ms-flex-flow: row;
             flex-flow: row;
   }
@@ -602,6 +644,7 @@ textarea {
 .service-list__body {
   padding: 30px 10px 10px 10px;
   -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
       -ms-flex-order: 2;
           order: 2;
 }
@@ -640,11 +683,13 @@ textarea {
 
 .service-list__img {
   -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
   position: relative;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
   height: 200px;
   width: 200px;
   overflow: hidden;
@@ -738,10 +783,12 @@ textarea {
 
 .greeting {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
   margin-right: auto;
@@ -751,10 +798,12 @@ textarea {
 @media screen and (min-width: 959px) {
   .greeting {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
         -ms-flex-flow: row;
             flex-flow: row;
   }
@@ -762,19 +811,24 @@ textarea {
 
 .greeting__body {
   -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
       -ms-flex-order: 2;
           order: 2;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-flex: 1;
+  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding-top: 30px;
@@ -783,6 +837,7 @@ textarea {
 @media screen and (min-width: 959px) {
   .greeting__body {
     -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
     padding-top: 0;
@@ -813,6 +868,7 @@ textarea {
 
 .greeting__img {
   -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
   position: relative;
@@ -826,6 +882,7 @@ textarea {
 @media screen and (min-width: 959px) {
   .greeting__img {
     -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
     width: 360px;
@@ -975,20 +1032,24 @@ th {
 @media screen and (min-width: 959px) {
   .service-point {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 599px) and (max-width: 959px) {
   .service-point {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
 }
 
@@ -1043,6 +1104,7 @@ th {
 
 .service-flow__item {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   place-items: center;
@@ -1069,6 +1131,7 @@ th {
 
 .service-flow__body {
   -webkit-box-flex: 1;
+  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
@@ -1162,6 +1225,7 @@ th {
 @media screen and (min-width: 959px) {
   .news-list__item {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -1170,6 +1234,7 @@ th {
 .news-list__meta {
   margin-bottom: 15px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   place-items: center;
@@ -1207,9 +1272,11 @@ th {
 
 .article__meta {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   place-items: center;
@@ -1227,9 +1294,11 @@ th {
 
 .postlinks {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-right: auto;
@@ -1337,12 +1406,15 @@ th {
 @media screen and (min-width: 959px) {
   .contact {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     height: 100px;
@@ -1351,6 +1423,7 @@ th {
 
 .contact__aside {
   -webkit-box-flex: 1;
+  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   position: relative;
