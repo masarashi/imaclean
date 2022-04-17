@@ -121,19 +121,20 @@
 .service-list {
     margin-bottom: $spacing-m;
     &__wrapper {
-
-        // @include pc {
-        //     flex-flow: row;
-        // }
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: column;
         gap: 30px;
-        // flex-flow: column;
-        // place-items: center;
+        @include pc {
+            flex-flow: row;
+            flex-wrap: wrap;
+        }
     }
     &__item {
+        @include pc {
+            width: calc((100% - 30px * 2) / 3);
+        }
+        width: 100%;
         padding: 20px;
-        width: calc((100% - 30px * 2) / 3);
         border: 1px solid rgba(0, 0, 0, 0.05);
         border-radius: 10px;
         text-align: center;
@@ -142,33 +143,20 @@
         font-size: 1.6rem;
     }
     &__img {
-        // @include pc {
-        //     height: 200px;
-        //     width: 200px;
-        // }
-        order: 1;
-        // position: relative;
-        // flex-shrink: 0;
-        height: 150px;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-        // overflow: hidden;
-        // &.--large {
-        //     @include pc {
-        //         height: 300px;
-        //         width: 300px;
-        //     }
-        // }
-        img {
+        @include pc {
             height: 150px;
+        }
+        order: 1;
+        margin-bottom: 20px;
+        height: 100px;
+        // width: 100%;
+        text-align: center;
+        img {
             width: auto;
-            // position: absolute;
-            // top: 50%;
-            // left: 50%;
-            // transform: translate(-50%, -50%);
-            // height: 100%;
-            // object-fit: cover;
+            height: 100px;
+            @include pc {
+                height: 150px;
+            }
         }
     }
         // &__txt {
