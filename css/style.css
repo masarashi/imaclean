@@ -1,7 +1,16 @@
 @charset "UTF-8";
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul, ol, dd {
@@ -545,6 +554,7 @@ textarea {
   position: relative;
   padding-bottom: 30px;
   font-size: 1.8rem;
+  font-weight: bold;
   text-align: center;
   line-height: 1.8rem;
   width: 100%;
@@ -559,7 +569,7 @@ textarea {
 .aboutus__title::before {
   content: attr(data-number);
   position: absolute;
-  left: -15px;
+  left: -10px;
   display: block;
   color: darkgreen;
   font-size: 4rem;
@@ -618,67 +628,22 @@ textarea {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  place-items: center;
-}
-
-@media screen and (min-width: 959px) {
-  .service-list__wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row;
-        -ms-flex-flow: row;
-            flex-flow: row;
-  }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 30px;
 }
 
 .service-list__item {
-  margin-bottom: 50px;
-  width: 100%;
-}
-
-.service-list__body {
-  padding: 30px 10px 10px 10px;
-  -webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-@media screen and (min-width: 959px) {
-  .service-list__body {
-    padding: 0 0 0 30px;
-  }
+  padding: 20px;
+  width: calc((100% - 30px * 2) / 3);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  text-align: center;
 }
 
 .service-list__title {
-  font-size: 1.8rem;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-@media screen and (min-width: 959px) {
-  .service-list__title {
-    font-size: 2rem;
-    text-align: left;
-    border-bottom: 1px solid gray;
-    padding-bottom: 10px;
-  }
-}
-
-.service-list__txt {
-  font-size: 1.4rem;
-}
-
-@media screen and (min-width: 959px) {
-  .service-list__txt {
-    font-size: 1.6rem;
-    padding-top: 10px;
-  }
+  font-size: 1.6rem;
 }
 
 .service-list__img {
@@ -686,50 +651,15 @@ textarea {
   -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
-  position: relative;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-  height: 200px;
-  width: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-@media screen and (min-width: 959px) {
-  .service-list__img {
-    height: 200px;
-    width: 200px;
-  }
-}
-
-@media screen and (min-width: 959px) {
-  .service-list__img.--large {
-    height: 300px;
-    width: 300px;
-  }
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .service-list__img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.service-list__price {
-  font-size: 1.4rem;
-  margin-top: 30px;
-}
-
-@media screen and (min-width: 959px) {
-  .service-list__price {
-    font-size: 1.6rem;
-  }
+  height: 150px;
+  width: auto;
 }
 
 .page-title__aboutus {
@@ -848,6 +778,7 @@ textarea {
 
 .greeting__txt {
   font-size: 1.4rem;
+  text-align: justify;
 }
 
 @media screen and (min-width: 959px) {
@@ -877,6 +808,7 @@ textarea {
   overflow: hidden;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 959px) {
@@ -1090,6 +1022,7 @@ th {
 .service-point__txt {
   font-size: 1.4rem;
   padding: 10px;
+  text-align: justify;
 }
 
 @media screen and (min-width: 959px) {

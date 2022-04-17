@@ -12,41 +12,50 @@ Template Name: サービス
             <?php get_template_part('template-parts/breadcrumb'); ?>
             <h1 class="page-title__service">サービス</h1>
             <h2 class="section-title">I.M.Aクリーン産業のサービス</h2>
-            <ul class="service-list">
-                <li id="service-01" class="service-list__item">
-                    <div class="service-list__wrapper">
-                        <div class="service-list__body">
-                            <div class="service-list__title">不用品・ゴミ回収</div>
-                            <p class="service-list__txt">大手処理施設と付き合いがあるので、安心してお任せいただけます。一般家庭でのごみ処理や、粗大ごみ・不用 品・廃棄物の回収も行っております。笑顔と元気だけは必ず忘れずに作業し、出来るだけお客様の要望に応えら れるよう努力します。長いお付き合いが出来るような対応します。</p>
-                        </div>
-                        <div class="service-list__img --large">
-                            <img src="<?php echo get_template_directory_uri(); ?>/image/service_image_trash.jpeg" alt="">
-                        </div>
+            <div class="service-list">
+                <div class="service-list__wrapper">
+                    <div class="service-list__item">
+                        <a href="service#service-01">
+                            <div class="service-list__img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/service_icon_01.png" alt="">
+                            </div>
+                            <p class="service-list__title">不用品・ゴミ回収</p>
+                        </a>
                     </div>
-                </li>
-                <li id="service-02" class="service-list__item">
-                    <div class="service-list__wrapper">
-                        <div class="service-list__body">
-                            <div class="service-list__title">運送</div>
-                            <p class="service-list__txt">トラック1日・半日貸切・チャーター便など、お客様のニーズに合った利用ができます。引っ越しなどに運転手付きでお手伝いします。</p>
-                        </div>
-                        <div class="service-list__img --large">
-                            <img src="<?php echo get_template_directory_uri(); ?>/image/service_image_truck.jpeg" alt="">
-                        </div>
+                    <div class="service-list__item">
+                        <a href="service#service-02">
+                            <div class="service-list__img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/service_icon_02.png" alt="">
+                            </div>
+                            <p class="service-list__title">内装解体</p>
+                        </a>
                     </div>
-                </li>
-                <li id="service-03" class="service-list__item">
-                    <div class="service-list__wrapper">
-                        <div class="service-list__body">
-                            <div class="service-list__title">庭のお掃除・家の模様替え</div>
-                            <p class="service-list__txt">庭のお掃除や家の模様替えなど、一人で出来ない事、一人で持ち上げられないタンスや冷蔵庫など、お手伝いします。</p>
-                        </div>
-                        <div class="service-list__img --large">
-                            <img src="<?php echo get_template_directory_uri(); ?>/image/service_image_home.jpeg" alt="">
-                        </div>
+                    <div class="service-list__item">
+                        <a href="service#service-03">
+                            <div class="service-list__img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/service_icon_03.png" alt="">
+                            </div>
+                            <p class="service-list__title">運送・引っ越しのお手伝い</p>
+                        </a>
                     </div>
-                </li>
-            </ul>
+                    <div class="service-list__item">
+                        <a href="service#service-04">
+                            <div class="service-list__img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/service_icon_04.png" alt="">
+                            </div>
+                            <p class="service-list__title">庭のお掃除</p>
+                        </a>
+                    </div>
+                    <div class="service-list__item">
+                        <a href="service#service-05">
+                            <div class="service-list__img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/service_icon_05.png" alt="">
+                            </div>
+                            <p class="service-list__title">お家の模様替え</p>
+                        </a>
+                    </div>
+                </div><!-- /.wrapper -->
+            </div>
         </div>
     </section>
 
