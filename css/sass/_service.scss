@@ -5,6 +5,79 @@
     }
 }
 
+.service-detail {
+    margin-bottom: $spacing-m;
+    &__wrapper {
+        display: flex;
+        flex-flow: column;
+        gap: 30px;
+    }
+    &__item {
+        display: flex;
+        place-items: center;
+        width: 100%;
+        padding: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+    }
+    &__title {
+        font-size: 2rem;
+        @include pc {
+            font-size: 2.2rem;
+        }
+        @include tab {
+            font-size: 2.2rem;
+        }
+        letter-spacing: 0.4rem;
+    }
+    &__img {
+        display: flex;
+        align-items: center;
+        @include pc {
+            height: 150px;
+        }
+        order: 1;
+        height: 100px;
+        img {
+            display: none;
+            @include pc {
+                display: block;
+                width: 100px;
+                height: 100px;
+            }
+            @include tab {
+                display: block;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    &__body {
+        order: 2;
+        @include pc {
+            padding-left: 30px;
+        }
+        @include tab {
+            padding-left: 30px;
+        }
+    }
+    &__txt {
+        padding-top: 10px;
+        font-size: 1.4rem;
+        @include pc {
+            font-size: 1.6rem;
+        }
+        @include tab {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+
+
+
+
 .service-point {
     @include pc {
         display: flex;
@@ -41,7 +114,6 @@
         font-size: 1.4rem;
         padding: 10px;
         text-align: justify;
-
     }
 }
 
