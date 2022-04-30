@@ -91,6 +91,14 @@
                             <p class="service-list__title">お家の模様替え</p>
                         </a>
                     </div>
+                    <div class="service-list__item">
+                        <a href="service#service-06">
+                            <div class="service-list__img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/service_icon_06.png" alt="">
+                            </div>
+                            <p class="service-list__title">水回り工事一式</p>
+                        </a>
+                    </div>
                 </div><!-- /.wrapper -->
             </div>
             <div class="l-seciton__link">

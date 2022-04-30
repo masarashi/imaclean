@@ -59,6 +59,15 @@ Template Name: サービス
                             <p class="service-detail__txt">家の模様替えなど、一人で持ち上げられないタンスや冷蔵庫の移動などお手伝いします。</p><!-- /.service-detail__txt -->
                         </div><!-- /.service-detail__body -->
                     </div>
+                    <div class="service-detail__item" id="service-06">
+                        <div class="service-detail__img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/image/service_icon_06.png" alt="">
+                        </div>
+                        <div class="service-detail__body">
+                            <p class="service-detail__title">水回り工事一式</p>
+                            <p class="service-detail__txt">お風呂、キッチン、トイレ、洗面所など、水回り設備の解体・交換までお任せください。</p><!-- /.service-detail__txt -->
+                        </div><!-- /.service-detail__body -->
+                    </div>
                 </div><!-- /.wrapper -->
             </div>
         </div>
