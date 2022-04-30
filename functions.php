@@ -46,7 +46,7 @@ add_filter('document_title_parts', 'my_document_title_parts');
 function my_document_title_parts($title){
     if (is_home()) {
         unset($title['tabline']); // タグラインを削除
-        $title['title'] = 'さいたま市・東京近郊で内装解体・不用品・産業廃棄物運搬・ゴミ回収なら'; // テキストを変更
+        $title['title'] = 'I.M.Aクリーン産業 | さいたま市・東京近郊で内装解体・不用品・産業廃棄物運搬・ゴミ回収なら'; // テキストを変更
     }
     return $title;
 }
