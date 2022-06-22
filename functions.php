@@ -29,6 +29,7 @@ add_action('init', 'load_js');
 
 /**
  * <title> タグを出力する
+ * タイトル - サイト名
  */
 add_theme_support('title-tag');
 
@@ -48,10 +49,10 @@ function my_document_title_separator($separator)
 add_filter('document_title_parts', 'my_document_title_parts');
 function my_document_title_parts($title)
 {
-    // if (is_home()) {
-    //     unset($title['tabline']); // タグラインを削除
-    //     $title['title'] = 'I.M.Aクリーン産業 | さいたま市・東京近郊で内装解体・不用品・産業廃棄物運搬・ゴミ回収なら'; // テキストを変更
-    // }
+    if (is_home()) {
+        unset($title['tagline']); // description を出力しない
+        // $title['title'] = 'I.M.Aクリーン産業 | さいたま市・東京近郊で内装解体・不用品・産業廃棄物運搬・ゴミ回収なら'; // テキストを変更
+    }
     return $title;
 }
 
