@@ -446,8 +446,8 @@ textarea {
   background-image: url(../image/hero.jpg);
   background-size: cover;
   background-position: center;
-  height: 500px;
-  margin-bottom: 150px;
+  height: 300px;
+  margin-bottom: 50px;
   position: relative;
 }
 
@@ -464,7 +464,8 @@ textarea {
 }
 
 .hero__wrap {
-  width: 960px;
+  width: 100%;
+  padding: 0 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -472,8 +473,14 @@ textarea {
           transform: translate(-50%, -50%);
 }
 
+@media screen and (min-width: 959px) {
+  .hero__wrap {
+    max-width: 960px;
+  }
+}
+
 .hero__txt {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: white;
   letter-spacing: 5px;
   text-align: center;
@@ -486,8 +493,14 @@ textarea {
 }
 
 .hero__txt--small {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
+}
+
+@media screen and (min-width: 959px) {
+  .hero__txt--small {
+    font-size: 1.6rem;
+  }
 }
 
 .hero__image::before {

@@ -13,13 +13,17 @@
             height: 400px;
         }
 
-        height: 500px;
-        margin-bottom: $spacing-l;
+        height: 300px;
+        margin-bottom: $spacing-m;
         position: relative;
     }
 
     &__wrap {
-        width: 960px;
+        @include pc {
+            max-width: 960px;
+        }
+        width: 100%;
+        padding: 0 20px;
         position: absolute;
         // top: 0;
         top: 50%;
@@ -34,7 +38,7 @@
         }
 
         // position: absolute;
-        font-size: 2rem;
+        font-size: 2.4rem;
         color: white;
         // top: 100px;
         // top: 50%;
@@ -45,7 +49,10 @@
     }
 
     &__txt--small {
-        font-size: 1.6rem;
+        @include pc {
+            font-size: 1.6rem;
+        }
+        font-size: 1.4rem;
         letter-spacing: 1px;
     }
 }
